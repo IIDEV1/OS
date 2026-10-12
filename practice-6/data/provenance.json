@@ -1,0 +1,15 @@
+{
+  "source": "https://github.com/sismetanin/rureviews",
+  "raw_url": "https://raw.githubusercontent.com/sismetanin/rureviews/2f6e61d30dc6c58ba47dce72e5803e1f0a3f38a7/women-clothing-accessories.3-class.balanced.csv",
+  "download_date": "2026-10-12",
+  "source_sha256": "db226708d966a1506560136ef85b33ea326eaf6119465d4b1edb5bf9395330fd",
+  "sample_sha256": "a7200bb75265468251b03fb46112ef1b2dafa079278ad56fb0cd426ea0b520c9",
+  "seed": 42,
+  "sample_size": 3000,
+  "per_class": 1000,
+  "clean_unique_source_rows": 83258,
+  "source_commit": "2f6e61d30dc6c58ba47dce72e5803e1f0a3f38a7",
+  "label_normalization": {
+    "neautral": "neutral"
+  }
+}
