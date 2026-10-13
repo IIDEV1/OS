@@ -1,0 +1,1434 @@
+{
+  "0": {
+    "per_process": [
+      {
+        "pid": "LOW",
+        "completion": 106,
+        "turnaround": 106,
+        "waiting": 100,
+        "response": 100
+      },
+      {
+        "pid": "H0",
+        "completion": 1,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H1",
+        "completion": 2,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H2",
+        "completion": 3,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H3",
+        "completion": 4,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H4",
+        "completion": 5,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H5",
+        "completion": 6,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H6",
+        "completion": 7,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H7",
+        "completion": 8,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H8",
+        "completion": 9,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H9",
+        "completion": 10,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H10",
+        "completion": 11,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H11",
+        "completion": 12,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H12",
+        "completion": 13,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H13",
+        "completion": 14,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H14",
+        "completion": 15,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H15",
+        "completion": 16,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H16",
+        "completion": 17,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H17",
+        "completion": 18,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H18",
+        "completion": 19,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H19",
+        "completion": 20,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H20",
+        "completion": 21,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H21",
+        "completion": 22,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H22",
+        "completion": 23,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H23",
+        "completion": 24,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H24",
+        "completion": 25,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H25",
+        "completion": 26,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H26",
+        "completion": 27,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H27",
+        "completion": 28,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H28",
+        "completion": 29,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H29",
+        "completion": 30,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H30",
+        "completion": 31,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H31",
+        "completion": 32,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H32",
+        "completion": 33,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H33",
+        "completion": 34,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H34",
+        "completion": 35,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H35",
+        "completion": 36,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H36",
+        "completion": 37,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H37",
+        "completion": 38,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H38",
+        "completion": 39,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H39",
+        "completion": 40,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H40",
+        "completion": 41,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H41",
+        "completion": 42,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H42",
+        "completion": 43,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H43",
+        "completion": 44,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H44",
+        "completion": 45,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H45",
+        "completion": 46,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H46",
+        "completion": 47,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H47",
+        "completion": 48,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H48",
+        "completion": 49,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H49",
+        "completion": 50,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H50",
+        "completion": 51,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H51",
+        "completion": 52,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H52",
+        "completion": 53,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H53",
+        "completion": 54,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H54",
+        "completion": 55,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H55",
+        "completion": 56,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H56",
+        "completion": 57,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H57",
+        "completion": 58,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H58",
+        "completion": 59,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H59",
+        "completion": 60,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H60",
+        "completion": 61,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H61",
+        "completion": 62,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H62",
+        "completion": 63,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H63",
+        "completion": 64,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H64",
+        "completion": 65,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H65",
+        "completion": 66,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H66",
+        "completion": 67,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H67",
+        "completion": 68,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H68",
+        "completion": 69,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H69",
+        "completion": 70,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H70",
+        "completion": 71,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H71",
+        "completion": 72,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H72",
+        "completion": 73,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H73",
+        "completion": 74,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H74",
+        "completion": 75,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H75",
+        "completion": 76,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H76",
+        "completion": 77,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H77",
+        "completion": 78,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H78",
+        "completion": 79,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H79",
+        "completion": 80,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H80",
+        "completion": 81,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H81",
+        "completion": 82,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H82",
+        "completion": 83,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H83",
+        "completion": 84,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H84",
+        "completion": 85,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H85",
+        "completion": 86,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H86",
+        "completion": 87,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H87",
+        "completion": 88,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H88",
+        "completion": 89,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H89",
+        "completion": 90,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H90",
+        "completion": 91,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H91",
+        "completion": 92,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H92",
+        "completion": 93,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H93",
+        "completion": 94,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H94",
+        "completion": 95,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H95",
+        "completion": 96,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H96",
+        "completion": 97,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H97",
+        "completion": 98,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H98",
+        "completion": 99,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H99",
+        "completion": 100,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      }
+    ],
+    "mean_waiting": 0.9900990099009901,
+    "mean_turnaround": 2.0396039603960396,
+    "mean_response": 0.9900990099009901,
+    "cpu_utilization": 100.0,
+    "switches": 100
+  },
+  "2": {
+    "per_process": [
+      {
+        "pid": "LOW",
+        "completion": 30,
+        "turnaround": 30,
+        "waiting": 24,
+        "response": 20
+      },
+      {
+        "pid": "H0",
+        "completion": 1,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H1",
+        "completion": 2,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H2",
+        "completion": 3,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H3",
+        "completion": 4,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H4",
+        "completion": 5,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H5",
+        "completion": 6,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H6",
+        "completion": 7,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H7",
+        "completion": 8,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H8",
+        "completion": 9,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H9",
+        "completion": 10,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H10",
+        "completion": 11,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H11",
+        "completion": 12,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H12",
+        "completion": 13,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H13",
+        "completion": 14,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H14",
+        "completion": 15,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H15",
+        "completion": 16,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H16",
+        "completion": 17,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H17",
+        "completion": 18,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H18",
+        "completion": 19,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H19",
+        "completion": 20,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "H20",
+        "completion": 23,
+        "turnaround": 3,
+        "waiting": 2,
+        "response": 2
+      },
+      {
+        "pid": "H21",
+        "completion": 24,
+        "turnaround": 3,
+        "waiting": 2,
+        "response": 2
+      },
+      {
+        "pid": "H22",
+        "completion": 27,
+        "turnaround": 5,
+        "waiting": 4,
+        "response": 4
+      },
+      {
+        "pid": "H23",
+        "completion": 28,
+        "turnaround": 5,
+        "waiting": 4,
+        "response": 4
+      },
+      {
+        "pid": "H24",
+        "completion": 31,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H25",
+        "completion": 32,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H26",
+        "completion": 33,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H27",
+        "completion": 34,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H28",
+        "completion": 35,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H29",
+        "completion": 36,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H30",
+        "completion": 37,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H31",
+        "completion": 38,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H32",
+        "completion": 39,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H33",
+        "completion": 40,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H34",
+        "completion": 41,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H35",
+        "completion": 42,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H36",
+        "completion": 43,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H37",
+        "completion": 44,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H38",
+        "completion": 45,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H39",
+        "completion": 46,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H40",
+        "completion": 47,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H41",
+        "completion": 48,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H42",
+        "completion": 49,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H43",
+        "completion": 50,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H44",
+        "completion": 51,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H45",
+        "completion": 52,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H46",
+        "completion": 53,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H47",
+        "completion": 54,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H48",
+        "completion": 55,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H49",
+        "completion": 56,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H50",
+        "completion": 57,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H51",
+        "completion": 58,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H52",
+        "completion": 59,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H53",
+        "completion": 60,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H54",
+        "completion": 61,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H55",
+        "completion": 62,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H56",
+        "completion": 63,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H57",
+        "completion": 64,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H58",
+        "completion": 65,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H59",
+        "completion": 66,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H60",
+        "completion": 67,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H61",
+        "completion": 68,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H62",
+        "completion": 69,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H63",
+        "completion": 70,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H64",
+        "completion": 71,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H65",
+        "completion": 72,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H66",
+        "completion": 73,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H67",
+        "completion": 74,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H68",
+        "completion": 75,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H69",
+        "completion": 76,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H70",
+        "completion": 77,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H71",
+        "completion": 78,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H72",
+        "completion": 79,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H73",
+        "completion": 80,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H74",
+        "completion": 81,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H75",
+        "completion": 82,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H76",
+        "completion": 83,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H77",
+        "completion": 84,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H78",
+        "completion": 85,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H79",
+        "completion": 86,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H80",
+        "completion": 87,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H81",
+        "completion": 88,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H82",
+        "completion": 89,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H83",
+        "completion": 90,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H84",
+        "completion": 91,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H85",
+        "completion": 92,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H86",
+        "completion": 93,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H87",
+        "completion": 94,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H88",
+        "completion": 95,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H89",
+        "completion": 96,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H90",
+        "completion": 97,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H91",
+        "completion": 98,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H92",
+        "completion": 99,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H93",
+        "completion": 100,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H94",
+        "completion": 101,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H95",
+        "completion": 102,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H96",
+        "completion": 103,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H97",
+        "completion": 104,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H98",
+        "completion": 105,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      },
+      {
+        "pid": "H99",
+        "completion": 106,
+        "turnaround": 7,
+        "waiting": 6,
+        "response": 6
+      }
+    ],
+    "mean_waiting": 4.871287128712871,
+    "mean_turnaround": 5.920792079207921,
+    "mean_response": 4.8316831683168315,
+    "cpu_utilization": 100.0,
+    "switches": 102
+  }
+}

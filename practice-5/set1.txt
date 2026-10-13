@@ -1,0 +1,5 @@
+# PID arrival burst priority (priorities added: all equal)
+P1 0 8 0
+P2 1 4 0
+P3 2 9 0
+P4 3 5 0

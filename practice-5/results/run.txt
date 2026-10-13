@@ -1,0 +1,47 @@
+test_idle_and_metrics (test_sched.SchedulingTests.test_idle_and_metrics) ... ok
+test_invalid_input (test_sched.SchedulingTests.test_invalid_input) ... ok
+test_mlfq_boost_changes_service (test_sched.SchedulingTests.test_mlfq_boost_changes_service) ... ok
+test_mlfq_preserves_slice (test_sched.SchedulingTests.test_mlfq_preserves_slice) ... ok
+test_priority_and_aging (test_sched.SchedulingTests.test_priority_and_aging) ... ok
+test_random_invariants (test_sched.SchedulingTests.test_random_invariants) ... ok
+test_reference (test_sched.SchedulingTests.test_reference) ... ok
+test_rr_arrival_at_boundary (test_sched.SchedulingTests.test_rr_arrival_at_boundary) ... ok
+test_srtf_preempts (test_sched.SchedulingTests.test_srtf_preempts) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.092s
+
+OK
+| Набор | Алгоритм | Ожидание | Оборот | Отклик | CPU, % | Переключения |
+|---|---|---:|---:|---:|---:|---:|
+| set1 | fcfs | 8.75 | 15.25 | 8.75 | 100.00 | 3 |
+| set1 | sjf | 7.75 | 14.25 | 7.75 | 100.00 | 3 |
+| set1 | srtf | 6.50 | 13.00 | 4.25 | 100.00 | 4 |
+| set1 | rr | 13.50 | 20.00 | 3.00 | 100.00 | 9 |
+| set1 | priority | 8.75 | 15.25 | 8.75 | 100.00 | 3 |
+| set1 | mlfq | 14.25 | 20.75 | 0.00 | 100.00 | 15 |
+| set2 | fcfs | 219.00 | 244.00 | 219.00 | 100.00 | 19 |
+| set2 | sjf | 184.95 | 209.95 | 184.95 | 100.00 | 19 |
+| set2 | srtf | 179.20 | 204.20 | 170.95 | 100.00 | 20 |
+| set2 | rr | 353.35 | 378.35 | 26.45 | 100.00 | 173 |
+| set2 | priority | 248.05 | 273.05 | 240.55 | 100.00 | 20 |
+| set2 | mlfq | 358.75 | 383.75 | 3.10 | 100.00 | 453 |
+| set3 | fcfs | 74.40 | 80.30 | 74.40 | 100.00 | 19 |
+| set3 | sjf | 70.20 | 76.10 | 70.20 | 100.00 | 19 |
+| set3 | srtf | 2.20 | 8.10 | 0.30 | 100.00 | 20 |
+| set3 | rr | 10.50 | 16.40 | 8.60 | 100.00 | 24 |
+| set3 | priority | 2.20 | 8.10 | 0.30 | 100.00 | 20 |
+| set3 | mlfq | 5.10 | 11.00 | 0.05 | 100.00 | 44 |
+LOW, no aging: {'pid': 'LOW', 'completion': 106, 'turnaround': 106, 'waiting': 100, 'response': 100}
+LOW, aging=2: {'pid': 'LOW', 'completion': 30, 'turnaround': 30, 'waiting': 24, 'response': 20}
+Gantt: 0--3:P1 | 3--6:P2 | 6--9:P3 | 9--12:P4 | 12--15:P1 | 15--16:P2 | 16--19:P3 | 19--21:P4 | 21--23:P1 | 23--26:P3
+PID   Completion Waiting Turnaround Response
+P1            23      15         23        0
+P2            16      11         15        2
+P3            26      15         24        4
+P4            21      13         18        6
+mean_waiting: 13.5000
+mean_turnaround: 20.0000
+mean_response: 3.0000
+cpu_utilization: 100.0000
+switches: 9.0000

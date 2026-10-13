@@ -1,0 +1,6573 @@
+{
+  "set1/fcfs": {
+    "intervals": [
+      [
+        0,
+        8,
+        "P1"
+      ],
+      [
+        8,
+        12,
+        "P2"
+      ],
+      [
+        12,
+        21,
+        "P3"
+      ],
+      [
+        21,
+        26,
+        "P4"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "P1",
+        "completion": 8,
+        "turnaround": 8,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "P2",
+        "completion": 12,
+        "turnaround": 11,
+        "waiting": 7,
+        "response": 7
+      },
+      {
+        "pid": "P3",
+        "completion": 21,
+        "turnaround": 19,
+        "waiting": 10,
+        "response": 10
+      },
+      {
+        "pid": "P4",
+        "completion": 26,
+        "turnaround": 23,
+        "waiting": 18,
+        "response": 18
+      }
+    ],
+    "mean_waiting": 8.75,
+    "mean_turnaround": 15.25,
+    "mean_response": 8.75,
+    "cpu_utilization": 100.0,
+    "switches": 3
+  },
+  "set1/sjf": {
+    "intervals": [
+      [
+        0,
+        8,
+        "P1"
+      ],
+      [
+        8,
+        12,
+        "P2"
+      ],
+      [
+        12,
+        17,
+        "P4"
+      ],
+      [
+        17,
+        26,
+        "P3"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "P1",
+        "completion": 8,
+        "turnaround": 8,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "P2",
+        "completion": 12,
+        "turnaround": 11,
+        "waiting": 7,
+        "response": 7
+      },
+      {
+        "pid": "P3",
+        "completion": 26,
+        "turnaround": 24,
+        "waiting": 15,
+        "response": 15
+      },
+      {
+        "pid": "P4",
+        "completion": 17,
+        "turnaround": 14,
+        "waiting": 9,
+        "response": 9
+      }
+    ],
+    "mean_waiting": 7.75,
+    "mean_turnaround": 14.25,
+    "mean_response": 7.75,
+    "cpu_utilization": 100.0,
+    "switches": 3
+  },
+  "set1/srtf": {
+    "intervals": [
+      [
+        0,
+        1,
+        "P1"
+      ],
+      [
+        1,
+        5,
+        "P2"
+      ],
+      [
+        5,
+        10,
+        "P4"
+      ],
+      [
+        10,
+        17,
+        "P1"
+      ],
+      [
+        17,
+        26,
+        "P3"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "P1",
+        "completion": 17,
+        "turnaround": 17,
+        "waiting": 9,
+        "response": 0
+      },
+      {
+        "pid": "P2",
+        "completion": 5,
+        "turnaround": 4,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "P3",
+        "completion": 26,
+        "turnaround": 24,
+        "waiting": 15,
+        "response": 15
+      },
+      {
+        "pid": "P4",
+        "completion": 10,
+        "turnaround": 7,
+        "waiting": 2,
+        "response": 2
+      }
+    ],
+    "mean_waiting": 6.5,
+    "mean_turnaround": 13.0,
+    "mean_response": 4.25,
+    "cpu_utilization": 100.0,
+    "switches": 4
+  },
+  "set1/rr": {
+    "intervals": [
+      [
+        0,
+        3,
+        "P1"
+      ],
+      [
+        3,
+        6,
+        "P2"
+      ],
+      [
+        6,
+        9,
+        "P3"
+      ],
+      [
+        9,
+        12,
+        "P4"
+      ],
+      [
+        12,
+        15,
+        "P1"
+      ],
+      [
+        15,
+        16,
+        "P2"
+      ],
+      [
+        16,
+        19,
+        "P3"
+      ],
+      [
+        19,
+        21,
+        "P4"
+      ],
+      [
+        21,
+        23,
+        "P1"
+      ],
+      [
+        23,
+        26,
+        "P3"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "P1",
+        "completion": 23,
+        "turnaround": 23,
+        "waiting": 15,
+        "response": 0
+      },
+      {
+        "pid": "P2",
+        "completion": 16,
+        "turnaround": 15,
+        "waiting": 11,
+        "response": 2
+      },
+      {
+        "pid": "P3",
+        "completion": 26,
+        "turnaround": 24,
+        "waiting": 15,
+        "response": 4
+      },
+      {
+        "pid": "P4",
+        "completion": 21,
+        "turnaround": 18,
+        "waiting": 13,
+        "response": 6
+      }
+    ],
+    "mean_waiting": 13.5,
+    "mean_turnaround": 20.0,
+    "mean_response": 3.0,
+    "cpu_utilization": 100.0,
+    "switches": 9
+  },
+  "set1/priority": {
+    "intervals": [
+      [
+        0,
+        8,
+        "P1"
+      ],
+      [
+        8,
+        12,
+        "P2"
+      ],
+      [
+        12,
+        21,
+        "P3"
+      ],
+      [
+        21,
+        26,
+        "P4"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "P1",
+        "completion": 8,
+        "turnaround": 8,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "P2",
+        "completion": 12,
+        "turnaround": 11,
+        "waiting": 7,
+        "response": 7
+      },
+      {
+        "pid": "P3",
+        "completion": 21,
+        "turnaround": 19,
+        "waiting": 10,
+        "response": 10
+      },
+      {
+        "pid": "P4",
+        "completion": 26,
+        "turnaround": 23,
+        "waiting": 18,
+        "response": 18
+      }
+    ],
+    "mean_waiting": 8.75,
+    "mean_turnaround": 15.25,
+    "mean_response": 8.75,
+    "cpu_utilization": 100.0,
+    "switches": 3
+  },
+  "set1/mlfq": {
+    "intervals": [
+      [
+        0,
+        1,
+        "P1"
+      ],
+      [
+        1,
+        2,
+        "P2"
+      ],
+      [
+        2,
+        3,
+        "P3"
+      ],
+      [
+        3,
+        4,
+        "P4"
+      ],
+      [
+        4,
+        6,
+        "P1"
+      ],
+      [
+        6,
+        8,
+        "P2"
+      ],
+      [
+        8,
+        10,
+        "P3"
+      ],
+      [
+        10,
+        12,
+        "P4"
+      ],
+      [
+        12,
+        16,
+        "P1"
+      ],
+      [
+        16,
+        17,
+        "P2"
+      ],
+      [
+        17,
+        20,
+        "P3"
+      ],
+      [
+        20,
+        21,
+        "P4"
+      ],
+      [
+        21,
+        22,
+        "P1"
+      ],
+      [
+        22,
+        23,
+        "P3"
+      ],
+      [
+        23,
+        24,
+        "P4"
+      ],
+      [
+        24,
+        26,
+        "P3"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "P1",
+        "completion": 22,
+        "turnaround": 22,
+        "waiting": 14,
+        "response": 0
+      },
+      {
+        "pid": "P2",
+        "completion": 17,
+        "turnaround": 16,
+        "waiting": 12,
+        "response": 0
+      },
+      {
+        "pid": "P3",
+        "completion": 26,
+        "turnaround": 24,
+        "waiting": 15,
+        "response": 0
+      },
+      {
+        "pid": "P4",
+        "completion": 24,
+        "turnaround": 21,
+        "waiting": 16,
+        "response": 0
+      }
+    ],
+    "mean_waiting": 14.25,
+    "mean_turnaround": 20.75,
+    "mean_response": 0.0,
+    "cpu_utilization": 100.0,
+    "switches": 15
+  },
+  "set2/fcfs": {
+    "intervals": [
+      [
+        0,
+        29,
+        "P7"
+      ],
+      [
+        29,
+        41,
+        "P5"
+      ],
+      [
+        41,
+        71,
+        "P4"
+      ],
+      [
+        71,
+        84,
+        "P20"
+      ],
+      [
+        84,
+        96,
+        "P1"
+      ],
+      [
+        96,
+        110,
+        "P13"
+      ],
+      [
+        110,
+        133,
+        "P14"
+      ],
+      [
+        133,
+        168,
+        "P3"
+      ],
+      [
+        168,
+        202,
+        "P10"
+      ],
+      [
+        202,
+        221,
+        "P6"
+      ],
+      [
+        221,
+        257,
+        "P12"
+      ],
+      [
+        257,
+        276,
+        "P2"
+      ],
+      [
+        276,
+        313,
+        "P9"
+      ],
+      [
+        313,
+        350,
+        "P15"
+      ],
+      [
+        350,
+        388,
+        "P18"
+      ],
+      [
+        388,
+        408,
+        "P11"
+      ],
+      [
+        408,
+        438,
+        "P19"
+      ],
+      [
+        438,
+        452,
+        "P17"
+      ],
+      [
+        452,
+        471,
+        "P8"
+      ],
+      [
+        471,
+        500,
+        "P16"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "P1",
+        "completion": 96,
+        "turnaround": 93,
+        "waiting": 81,
+        "response": 81
+      },
+      {
+        "pid": "P2",
+        "completion": 276,
+        "turnaround": 268,
+        "waiting": 249,
+        "response": 249
+      },
+      {
+        "pid": "P3",
+        "completion": 168,
+        "turnaround": 164,
+        "waiting": 129,
+        "response": 129
+      },
+      {
+        "pid": "P4",
+        "completion": 71,
+        "turnaround": 69,
+        "waiting": 39,
+        "response": 39
+      },
+      {
+        "pid": "P5",
+        "completion": 41,
+        "turnaround": 40,
+        "waiting": 28,
+        "response": 28
+      },
+      {
+        "pid": "P6",
+        "completion": 221,
+        "turnaround": 215,
+        "waiting": 196,
+        "response": 196
+      },
+      {
+        "pid": "P7",
+        "completion": 29,
+        "turnaround": 29,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "P8",
+        "completion": 471,
+        "turnaround": 458,
+        "waiting": 439,
+        "response": 439
+      },
+      {
+        "pid": "P9",
+        "completion": 313,
+        "turnaround": 305,
+        "waiting": 268,
+        "response": 268
+      },
+      {
+        "pid": "P10",
+        "completion": 202,
+        "turnaround": 197,
+        "waiting": 163,
+        "response": 163
+      },
+      {
+        "pid": "P11",
+        "completion": 408,
+        "turnaround": 398,
+        "waiting": 378,
+        "response": 378
+      },
+      {
+        "pid": "P12",
+        "completion": 257,
+        "turnaround": 251,
+        "waiting": 215,
+        "response": 215
+      },
+      {
+        "pid": "P13",
+        "completion": 110,
+        "turnaround": 107,
+        "waiting": 93,
+        "response": 93
+      },
+      {
+        "pid": "P14",
+        "completion": 133,
+        "turnaround": 130,
+        "waiting": 107,
+        "response": 107
+      },
+      {
+        "pid": "P15",
+        "completion": 350,
+        "turnaround": 342,
+        "waiting": 305,
+        "response": 305
+      },
+      {
+        "pid": "P16",
+        "completion": 500,
+        "turnaround": 486,
+        "waiting": 457,
+        "response": 457
+      },
+      {
+        "pid": "P17",
+        "completion": 452,
+        "turnaround": 440,
+        "waiting": 426,
+        "response": 426
+      },
+      {
+        "pid": "P18",
+        "completion": 388,
+        "turnaround": 379,
+        "waiting": 341,
+        "response": 341
+      },
+      {
+        "pid": "P19",
+        "completion": 438,
+        "turnaround": 427,
+        "waiting": 397,
+        "response": 397
+      },
+      {
+        "pid": "P20",
+        "completion": 84,
+        "turnaround": 82,
+        "waiting": 69,
+        "response": 69
+      }
+    ],
+    "mean_waiting": 219.0,
+    "mean_turnaround": 244.0,
+    "mean_response": 219.0,
+    "cpu_utilization": 100.0,
+    "switches": 19
+  },
+  "set2/sjf": {
+    "intervals": [
+      [
+        0,
+        29,
+        "P7"
+      ],
+      [
+        29,
+        41,
+        "P5"
+      ],
+      [
+        41,
+        53,
+        "P1"
+      ],
+      [
+        53,
+        66,
+        "P20"
+      ],
+      [
+        66,
+        80,
+        "P13"
+      ],
+      [
+        80,
+        94,
+        "P17"
+      ],
+      [
+        94,
+        113,
+        "P6"
+      ],
+      [
+        113,
+        132,
+        "P2"
+      ],
+      [
+        132,
+        151,
+        "P8"
+      ],
+      [
+        151,
+        171,
+        "P11"
+      ],
+      [
+        171,
+        194,
+        "P14"
+      ],
+      [
+        194,
+        223,
+        "P16"
+      ],
+      [
+        223,
+        253,
+        "P4"
+      ],
+      [
+        253,
+        283,
+        "P19"
+      ],
+      [
+        283,
+        317,
+        "P10"
+      ],
+      [
+        317,
+        352,
+        "P3"
+      ],
+      [
+        352,
+        388,
+        "P12"
+      ],
+      [
+        388,
+        425,
+        "P9"
+      ],
+      [
+        425,
+        462,
+        "P15"
+      ],
+      [
+        462,
+        500,
+        "P18"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "P1",
+        "completion": 53,
+        "turnaround": 50,
+        "waiting": 38,
+        "response": 38
+      },
+      {
+        "pid": "P2",
+        "completion": 132,
+        "turnaround": 124,
+        "waiting": 105,
+        "response": 105
+      },
+      {
+        "pid": "P3",
+        "completion": 352,
+        "turnaround": 348,
+        "waiting": 313,
+        "response": 313
+      },
+      {
+        "pid": "P4",
+        "completion": 253,
+        "turnaround": 251,
+        "waiting": 221,
+        "response": 221
+      },
+      {
+        "pid": "P5",
+        "completion": 41,
+        "turnaround": 40,
+        "waiting": 28,
+        "response": 28
+      },
+      {
+        "pid": "P6",
+        "completion": 113,
+        "turnaround": 107,
+        "waiting": 88,
+        "response": 88
+      },
+      {
+        "pid": "P7",
+        "completion": 29,
+        "turnaround": 29,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "P8",
+        "completion": 151,
+        "turnaround": 138,
+        "waiting": 119,
+        "response": 119
+      },
+      {
+        "pid": "P9",
+        "completion": 425,
+        "turnaround": 417,
+        "waiting": 380,
+        "response": 380
+      },
+      {
+        "pid": "P10",
+        "completion": 317,
+        "turnaround": 312,
+        "waiting": 278,
+        "response": 278
+      },
+      {
+        "pid": "P11",
+        "completion": 171,
+        "turnaround": 161,
+        "waiting": 141,
+        "response": 141
+      },
+      {
+        "pid": "P12",
+        "completion": 388,
+        "turnaround": 382,
+        "waiting": 346,
+        "response": 346
+      },
+      {
+        "pid": "P13",
+        "completion": 80,
+        "turnaround": 77,
+        "waiting": 63,
+        "response": 63
+      },
+      {
+        "pid": "P14",
+        "completion": 194,
+        "turnaround": 191,
+        "waiting": 168,
+        "response": 168
+      },
+      {
+        "pid": "P15",
+        "completion": 462,
+        "turnaround": 454,
+        "waiting": 417,
+        "response": 417
+      },
+      {
+        "pid": "P16",
+        "completion": 223,
+        "turnaround": 209,
+        "waiting": 180,
+        "response": 180
+      },
+      {
+        "pid": "P17",
+        "completion": 94,
+        "turnaround": 82,
+        "waiting": 68,
+        "response": 68
+      },
+      {
+        "pid": "P18",
+        "completion": 500,
+        "turnaround": 491,
+        "waiting": 453,
+        "response": 453
+      },
+      {
+        "pid": "P19",
+        "completion": 283,
+        "turnaround": 272,
+        "waiting": 242,
+        "response": 242
+      },
+      {
+        "pid": "P20",
+        "completion": 66,
+        "turnaround": 64,
+        "waiting": 51,
+        "response": 51
+      }
+    ],
+    "mean_waiting": 184.95,
+    "mean_turnaround": 209.95,
+    "mean_response": 184.95,
+    "cpu_utilization": 100.0,
+    "switches": 19
+  },
+  "set2/srtf": {
+    "intervals": [
+      [
+        0,
+        1,
+        "P7"
+      ],
+      [
+        1,
+        13,
+        "P5"
+      ],
+      [
+        13,
+        25,
+        "P1"
+      ],
+      [
+        25,
+        38,
+        "P20"
+      ],
+      [
+        38,
+        52,
+        "P13"
+      ],
+      [
+        52,
+        66,
+        "P17"
+      ],
+      [
+        66,
+        85,
+        "P6"
+      ],
+      [
+        85,
+        104,
+        "P2"
+      ],
+      [
+        104,
+        123,
+        "P8"
+      ],
+      [
+        123,
+        143,
+        "P11"
+      ],
+      [
+        143,
+        166,
+        "P14"
+      ],
+      [
+        166,
+        194,
+        "P7"
+      ],
+      [
+        194,
+        223,
+        "P16"
+      ],
+      [
+        223,
+        253,
+        "P4"
+      ],
+      [
+        253,
+        283,
+        "P19"
+      ],
+      [
+        283,
+        317,
+        "P10"
+      ],
+      [
+        317,
+        352,
+        "P3"
+      ],
+      [
+        352,
+        388,
+        "P12"
+      ],
+      [
+        388,
+        425,
+        "P9"
+      ],
+      [
+        425,
+        462,
+        "P15"
+      ],
+      [
+        462,
+        500,
+        "P18"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "P1",
+        "completion": 25,
+        "turnaround": 22,
+        "waiting": 10,
+        "response": 10
+      },
+      {
+        "pid": "P2",
+        "completion": 104,
+        "turnaround": 96,
+        "waiting": 77,
+        "response": 77
+      },
+      {
+        "pid": "P3",
+        "completion": 352,
+        "turnaround": 348,
+        "waiting": 313,
+        "response": 313
+      },
+      {
+        "pid": "P4",
+        "completion": 253,
+        "turnaround": 251,
+        "waiting": 221,
+        "response": 221
+      },
+      {
+        "pid": "P5",
+        "completion": 13,
+        "turnaround": 12,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "P6",
+        "completion": 85,
+        "turnaround": 79,
+        "waiting": 60,
+        "response": 60
+      },
+      {
+        "pid": "P7",
+        "completion": 194,
+        "turnaround": 194,
+        "waiting": 165,
+        "response": 0
+      },
+      {
+        "pid": "P8",
+        "completion": 123,
+        "turnaround": 110,
+        "waiting": 91,
+        "response": 91
+      },
+      {
+        "pid": "P9",
+        "completion": 425,
+        "turnaround": 417,
+        "waiting": 380,
+        "response": 380
+      },
+      {
+        "pid": "P10",
+        "completion": 317,
+        "turnaround": 312,
+        "waiting": 278,
+        "response": 278
+      },
+      {
+        "pid": "P11",
+        "completion": 143,
+        "turnaround": 133,
+        "waiting": 113,
+        "response": 113
+      },
+      {
+        "pid": "P12",
+        "completion": 388,
+        "turnaround": 382,
+        "waiting": 346,
+        "response": 346
+      },
+      {
+        "pid": "P13",
+        "completion": 52,
+        "turnaround": 49,
+        "waiting": 35,
+        "response": 35
+      },
+      {
+        "pid": "P14",
+        "completion": 166,
+        "turnaround": 163,
+        "waiting": 140,
+        "response": 140
+      },
+      {
+        "pid": "P15",
+        "completion": 462,
+        "turnaround": 454,
+        "waiting": 417,
+        "response": 417
+      },
+      {
+        "pid": "P16",
+        "completion": 223,
+        "turnaround": 209,
+        "waiting": 180,
+        "response": 180
+      },
+      {
+        "pid": "P17",
+        "completion": 66,
+        "turnaround": 54,
+        "waiting": 40,
+        "response": 40
+      },
+      {
+        "pid": "P18",
+        "completion": 500,
+        "turnaround": 491,
+        "waiting": 453,
+        "response": 453
+      },
+      {
+        "pid": "P19",
+        "completion": 283,
+        "turnaround": 272,
+        "waiting": 242,
+        "response": 242
+      },
+      {
+        "pid": "P20",
+        "completion": 38,
+        "turnaround": 36,
+        "waiting": 23,
+        "response": 23
+      }
+    ],
+    "mean_waiting": 179.2,
+    "mean_turnaround": 204.2,
+    "mean_response": 170.95,
+    "cpu_utilization": 100.0,
+    "switches": 20
+  },
+  "set2/rr": {
+    "intervals": [
+      [
+        0,
+        3,
+        "P7"
+      ],
+      [
+        3,
+        6,
+        "P5"
+      ],
+      [
+        6,
+        9,
+        "P4"
+      ],
+      [
+        9,
+        12,
+        "P20"
+      ],
+      [
+        12,
+        15,
+        "P1"
+      ],
+      [
+        15,
+        18,
+        "P13"
+      ],
+      [
+        18,
+        21,
+        "P14"
+      ],
+      [
+        21,
+        24,
+        "P7"
+      ],
+      [
+        24,
+        27,
+        "P3"
+      ],
+      [
+        27,
+        30,
+        "P10"
+      ],
+      [
+        30,
+        33,
+        "P6"
+      ],
+      [
+        33,
+        36,
+        "P12"
+      ],
+      [
+        36,
+        39,
+        "P5"
+      ],
+      [
+        39,
+        42,
+        "P2"
+      ],
+      [
+        42,
+        45,
+        "P9"
+      ],
+      [
+        45,
+        48,
+        "P15"
+      ],
+      [
+        48,
+        51,
+        "P18"
+      ],
+      [
+        51,
+        54,
+        "P4"
+      ],
+      [
+        54,
+        57,
+        "P11"
+      ],
+      [
+        57,
+        60,
+        "P19"
+      ],
+      [
+        60,
+        63,
+        "P17"
+      ],
+      [
+        63,
+        66,
+        "P20"
+      ],
+      [
+        66,
+        69,
+        "P8"
+      ],
+      [
+        69,
+        72,
+        "P16"
+      ],
+      [
+        72,
+        75,
+        "P1"
+      ],
+      [
+        75,
+        78,
+        "P13"
+      ],
+      [
+        78,
+        81,
+        "P14"
+      ],
+      [
+        81,
+        84,
+        "P7"
+      ],
+      [
+        84,
+        87,
+        "P3"
+      ],
+      [
+        87,
+        90,
+        "P10"
+      ],
+      [
+        90,
+        93,
+        "P6"
+      ],
+      [
+        93,
+        96,
+        "P12"
+      ],
+      [
+        96,
+        99,
+        "P5"
+      ],
+      [
+        99,
+        102,
+        "P2"
+      ],
+      [
+        102,
+        105,
+        "P9"
+      ],
+      [
+        105,
+        108,
+        "P15"
+      ],
+      [
+        108,
+        111,
+        "P18"
+      ],
+      [
+        111,
+        114,
+        "P4"
+      ],
+      [
+        114,
+        117,
+        "P11"
+      ],
+      [
+        117,
+        120,
+        "P19"
+      ],
+      [
+        120,
+        123,
+        "P17"
+      ],
+      [
+        123,
+        126,
+        "P20"
+      ],
+      [
+        126,
+        129,
+        "P8"
+      ],
+      [
+        129,
+        132,
+        "P16"
+      ],
+      [
+        132,
+        135,
+        "P1"
+      ],
+      [
+        135,
+        138,
+        "P13"
+      ],
+      [
+        138,
+        141,
+        "P14"
+      ],
+      [
+        141,
+        144,
+        "P7"
+      ],
+      [
+        144,
+        147,
+        "P3"
+      ],
+      [
+        147,
+        150,
+        "P10"
+      ],
+      [
+        150,
+        153,
+        "P6"
+      ],
+      [
+        153,
+        156,
+        "P12"
+      ],
+      [
+        156,
+        159,
+        "P5"
+      ],
+      [
+        159,
+        162,
+        "P2"
+      ],
+      [
+        162,
+        165,
+        "P9"
+      ],
+      [
+        165,
+        168,
+        "P15"
+      ],
+      [
+        168,
+        171,
+        "P18"
+      ],
+      [
+        171,
+        174,
+        "P4"
+      ],
+      [
+        174,
+        177,
+        "P11"
+      ],
+      [
+        177,
+        180,
+        "P19"
+      ],
+      [
+        180,
+        183,
+        "P17"
+      ],
+      [
+        183,
+        186,
+        "P20"
+      ],
+      [
+        186,
+        189,
+        "P8"
+      ],
+      [
+        189,
+        192,
+        "P16"
+      ],
+      [
+        192,
+        195,
+        "P1"
+      ],
+      [
+        195,
+        198,
+        "P13"
+      ],
+      [
+        198,
+        201,
+        "P14"
+      ],
+      [
+        201,
+        204,
+        "P7"
+      ],
+      [
+        204,
+        207,
+        "P3"
+      ],
+      [
+        207,
+        210,
+        "P10"
+      ],
+      [
+        210,
+        213,
+        "P6"
+      ],
+      [
+        213,
+        216,
+        "P12"
+      ],
+      [
+        216,
+        219,
+        "P2"
+      ],
+      [
+        219,
+        222,
+        "P9"
+      ],
+      [
+        222,
+        225,
+        "P15"
+      ],
+      [
+        225,
+        228,
+        "P18"
+      ],
+      [
+        228,
+        231,
+        "P4"
+      ],
+      [
+        231,
+        234,
+        "P11"
+      ],
+      [
+        234,
+        237,
+        "P19"
+      ],
+      [
+        237,
+        240,
+        "P17"
+      ],
+      [
+        240,
+        241,
+        "P20"
+      ],
+      [
+        241,
+        244,
+        "P8"
+      ],
+      [
+        244,
+        247,
+        "P16"
+      ],
+      [
+        247,
+        249,
+        "P13"
+      ],
+      [
+        249,
+        252,
+        "P14"
+      ],
+      [
+        252,
+        255,
+        "P7"
+      ],
+      [
+        255,
+        258,
+        "P3"
+      ],
+      [
+        258,
+        261,
+        "P10"
+      ],
+      [
+        261,
+        264,
+        "P6"
+      ],
+      [
+        264,
+        267,
+        "P12"
+      ],
+      [
+        267,
+        270,
+        "P2"
+      ],
+      [
+        270,
+        273,
+        "P9"
+      ],
+      [
+        273,
+        276,
+        "P15"
+      ],
+      [
+        276,
+        279,
+        "P18"
+      ],
+      [
+        279,
+        282,
+        "P4"
+      ],
+      [
+        282,
+        285,
+        "P11"
+      ],
+      [
+        285,
+        288,
+        "P19"
+      ],
+      [
+        288,
+        290,
+        "P17"
+      ],
+      [
+        290,
+        293,
+        "P8"
+      ],
+      [
+        293,
+        296,
+        "P16"
+      ],
+      [
+        296,
+        299,
+        "P14"
+      ],
+      [
+        299,
+        302,
+        "P7"
+      ],
+      [
+        302,
+        305,
+        "P3"
+      ],
+      [
+        305,
+        308,
+        "P10"
+      ],
+      [
+        308,
+        311,
+        "P6"
+      ],
+      [
+        311,
+        314,
+        "P12"
+      ],
+      [
+        314,
+        317,
+        "P2"
+      ],
+      [
+        317,
+        320,
+        "P9"
+      ],
+      [
+        320,
+        323,
+        "P15"
+      ],
+      [
+        323,
+        326,
+        "P18"
+      ],
+      [
+        326,
+        329,
+        "P4"
+      ],
+      [
+        329,
+        332,
+        "P11"
+      ],
+      [
+        332,
+        335,
+        "P19"
+      ],
+      [
+        335,
+        338,
+        "P8"
+      ],
+      [
+        338,
+        341,
+        "P16"
+      ],
+      [
+        341,
+        344,
+        "P14"
+      ],
+      [
+        344,
+        347,
+        "P7"
+      ],
+      [
+        347,
+        350,
+        "P3"
+      ],
+      [
+        350,
+        353,
+        "P10"
+      ],
+      [
+        353,
+        354,
+        "P6"
+      ],
+      [
+        354,
+        357,
+        "P12"
+      ],
+      [
+        357,
+        358,
+        "P2"
+      ],
+      [
+        358,
+        361,
+        "P9"
+      ],
+      [
+        361,
+        364,
+        "P15"
+      ],
+      [
+        364,
+        367,
+        "P18"
+      ],
+      [
+        367,
+        370,
+        "P4"
+      ],
+      [
+        370,
+        372,
+        "P11"
+      ],
+      [
+        372,
+        375,
+        "P19"
+      ],
+      [
+        375,
+        376,
+        "P8"
+      ],
+      [
+        376,
+        379,
+        "P16"
+      ],
+      [
+        379,
+        381,
+        "P14"
+      ],
+      [
+        381,
+        384,
+        "P7"
+      ],
+      [
+        384,
+        387,
+        "P3"
+      ],
+      [
+        387,
+        390,
+        "P10"
+      ],
+      [
+        390,
+        393,
+        "P12"
+      ],
+      [
+        393,
+        396,
+        "P9"
+      ],
+      [
+        396,
+        399,
+        "P15"
+      ],
+      [
+        399,
+        402,
+        "P18"
+      ],
+      [
+        402,
+        405,
+        "P4"
+      ],
+      [
+        405,
+        408,
+        "P19"
+      ],
+      [
+        408,
+        411,
+        "P16"
+      ],
+      [
+        411,
+        413,
+        "P7"
+      ],
+      [
+        413,
+        416,
+        "P3"
+      ],
+      [
+        416,
+        419,
+        "P10"
+      ],
+      [
+        419,
+        422,
+        "P12"
+      ],
+      [
+        422,
+        425,
+        "P9"
+      ],
+      [
+        425,
+        428,
+        "P15"
+      ],
+      [
+        428,
+        431,
+        "P18"
+      ],
+      [
+        431,
+        434,
+        "P4"
+      ],
+      [
+        434,
+        437,
+        "P19"
+      ],
+      [
+        437,
+        440,
+        "P16"
+      ],
+      [
+        440,
+        443,
+        "P3"
+      ],
+      [
+        443,
+        446,
+        "P10"
+      ],
+      [
+        446,
+        449,
+        "P12"
+      ],
+      [
+        449,
+        452,
+        "P9"
+      ],
+      [
+        452,
+        455,
+        "P15"
+      ],
+      [
+        455,
+        458,
+        "P18"
+      ],
+      [
+        458,
+        461,
+        "P19"
+      ],
+      [
+        461,
+        463,
+        "P16"
+      ],
+      [
+        463,
+        466,
+        "P3"
+      ],
+      [
+        466,
+        469,
+        "P10"
+      ],
+      [
+        469,
+        472,
+        "P12"
+      ],
+      [
+        472,
+        475,
+        "P9"
+      ],
+      [
+        475,
+        478,
+        "P15"
+      ],
+      [
+        478,
+        481,
+        "P18"
+      ],
+      [
+        481,
+        483,
+        "P3"
+      ],
+      [
+        483,
+        484,
+        "P10"
+      ],
+      [
+        484,
+        487,
+        "P12"
+      ],
+      [
+        487,
+        490,
+        "P9"
+      ],
+      [
+        490,
+        493,
+        "P15"
+      ],
+      [
+        493,
+        496,
+        "P18"
+      ],
+      [
+        496,
+        497,
+        "P9"
+      ],
+      [
+        497,
+        498,
+        "P15"
+      ],
+      [
+        498,
+        500,
+        "P18"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "P1",
+        "completion": 195,
+        "turnaround": 192,
+        "waiting": 180,
+        "response": 9
+      },
+      {
+        "pid": "P2",
+        "completion": 358,
+        "turnaround": 350,
+        "waiting": 331,
+        "response": 31
+      },
+      {
+        "pid": "P3",
+        "completion": 483,
+        "turnaround": 479,
+        "waiting": 444,
+        "response": 20
+      },
+      {
+        "pid": "P4",
+        "completion": 434,
+        "turnaround": 432,
+        "waiting": 402,
+        "response": 4
+      },
+      {
+        "pid": "P5",
+        "completion": 159,
+        "turnaround": 158,
+        "waiting": 146,
+        "response": 2
+      },
+      {
+        "pid": "P6",
+        "completion": 354,
+        "turnaround": 348,
+        "waiting": 329,
+        "response": 24
+      },
+      {
+        "pid": "P7",
+        "completion": 413,
+        "turnaround": 413,
+        "waiting": 384,
+        "response": 0
+      },
+      {
+        "pid": "P8",
+        "completion": 376,
+        "turnaround": 363,
+        "waiting": 344,
+        "response": 53
+      },
+      {
+        "pid": "P9",
+        "completion": 497,
+        "turnaround": 489,
+        "waiting": 452,
+        "response": 34
+      },
+      {
+        "pid": "P10",
+        "completion": 484,
+        "turnaround": 479,
+        "waiting": 445,
+        "response": 22
+      },
+      {
+        "pid": "P11",
+        "completion": 372,
+        "turnaround": 362,
+        "waiting": 342,
+        "response": 44
+      },
+      {
+        "pid": "P12",
+        "completion": 487,
+        "turnaround": 481,
+        "waiting": 445,
+        "response": 27
+      },
+      {
+        "pid": "P13",
+        "completion": 249,
+        "turnaround": 246,
+        "waiting": 232,
+        "response": 12
+      },
+      {
+        "pid": "P14",
+        "completion": 381,
+        "turnaround": 378,
+        "waiting": 355,
+        "response": 15
+      },
+      {
+        "pid": "P15",
+        "completion": 498,
+        "turnaround": 490,
+        "waiting": 453,
+        "response": 37
+      },
+      {
+        "pid": "P16",
+        "completion": 463,
+        "turnaround": 449,
+        "waiting": 420,
+        "response": 55
+      },
+      {
+        "pid": "P17",
+        "completion": 290,
+        "turnaround": 278,
+        "waiting": 264,
+        "response": 48
+      },
+      {
+        "pid": "P18",
+        "completion": 500,
+        "turnaround": 491,
+        "waiting": 453,
+        "response": 39
+      },
+      {
+        "pid": "P19",
+        "completion": 461,
+        "turnaround": 450,
+        "waiting": 420,
+        "response": 46
+      },
+      {
+        "pid": "P20",
+        "completion": 241,
+        "turnaround": 239,
+        "waiting": 226,
+        "response": 7
+      }
+    ],
+    "mean_waiting": 353.35,
+    "mean_turnaround": 378.35,
+    "mean_response": 26.45,
+    "cpu_utilization": 100.0,
+    "switches": 173
+  },
+  "set2/priority": {
+    "intervals": [
+      [
+        0,
+        1,
+        "P7"
+      ],
+      [
+        1,
+        13,
+        "P5"
+      ],
+      [
+        13,
+        48,
+        "P3"
+      ],
+      [
+        48,
+        85,
+        "P9"
+      ],
+      [
+        85,
+        122,
+        "P15"
+      ],
+      [
+        122,
+        151,
+        "P16"
+      ],
+      [
+        151,
+        179,
+        "P7"
+      ],
+      [
+        179,
+        198,
+        "P2"
+      ],
+      [
+        198,
+        218,
+        "P11"
+      ],
+      [
+        218,
+        248,
+        "P19"
+      ],
+      [
+        248,
+        271,
+        "P14"
+      ],
+      [
+        271,
+        307,
+        "P12"
+      ],
+      [
+        307,
+        337,
+        "P4"
+      ],
+      [
+        337,
+        351,
+        "P13"
+      ],
+      [
+        351,
+        385,
+        "P10"
+      ],
+      [
+        385,
+        404,
+        "P8"
+      ],
+      [
+        404,
+        423,
+        "P6"
+      ],
+      [
+        423,
+        437,
+        "P17"
+      ],
+      [
+        437,
+        450,
+        "P20"
+      ],
+      [
+        450,
+        462,
+        "P1"
+      ],
+      [
+        462,
+        500,
+        "P18"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "P1",
+        "completion": 462,
+        "turnaround": 459,
+        "waiting": 447,
+        "response": 447
+      },
+      {
+        "pid": "P2",
+        "completion": 198,
+        "turnaround": 190,
+        "waiting": 171,
+        "response": 171
+      },
+      {
+        "pid": "P3",
+        "completion": 48,
+        "turnaround": 44,
+        "waiting": 9,
+        "response": 9
+      },
+      {
+        "pid": "P4",
+        "completion": 337,
+        "turnaround": 335,
+        "waiting": 305,
+        "response": 305
+      },
+      {
+        "pid": "P5",
+        "completion": 13,
+        "turnaround": 12,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "P6",
+        "completion": 423,
+        "turnaround": 417,
+        "waiting": 398,
+        "response": 398
+      },
+      {
+        "pid": "P7",
+        "completion": 179,
+        "turnaround": 179,
+        "waiting": 150,
+        "response": 0
+      },
+      {
+        "pid": "P8",
+        "completion": 404,
+        "turnaround": 391,
+        "waiting": 372,
+        "response": 372
+      },
+      {
+        "pid": "P9",
+        "completion": 85,
+        "turnaround": 77,
+        "waiting": 40,
+        "response": 40
+      },
+      {
+        "pid": "P10",
+        "completion": 385,
+        "turnaround": 380,
+        "waiting": 346,
+        "response": 346
+      },
+      {
+        "pid": "P11",
+        "completion": 218,
+        "turnaround": 208,
+        "waiting": 188,
+        "response": 188
+      },
+      {
+        "pid": "P12",
+        "completion": 307,
+        "turnaround": 301,
+        "waiting": 265,
+        "response": 265
+      },
+      {
+        "pid": "P13",
+        "completion": 351,
+        "turnaround": 348,
+        "waiting": 334,
+        "response": 334
+      },
+      {
+        "pid": "P14",
+        "completion": 271,
+        "turnaround": 268,
+        "waiting": 245,
+        "response": 245
+      },
+      {
+        "pid": "P15",
+        "completion": 122,
+        "turnaround": 114,
+        "waiting": 77,
+        "response": 77
+      },
+      {
+        "pid": "P16",
+        "completion": 151,
+        "turnaround": 137,
+        "waiting": 108,
+        "response": 108
+      },
+      {
+        "pid": "P17",
+        "completion": 437,
+        "turnaround": 425,
+        "waiting": 411,
+        "response": 411
+      },
+      {
+        "pid": "P18",
+        "completion": 500,
+        "turnaround": 491,
+        "waiting": 453,
+        "response": 453
+      },
+      {
+        "pid": "P19",
+        "completion": 248,
+        "turnaround": 237,
+        "waiting": 207,
+        "response": 207
+      },
+      {
+        "pid": "P20",
+        "completion": 450,
+        "turnaround": 448,
+        "waiting": 435,
+        "response": 435
+      }
+    ],
+    "mean_waiting": 248.05,
+    "mean_turnaround": 273.05,
+    "mean_response": 240.55,
+    "cpu_utilization": 100.0,
+    "switches": 20
+  },
+  "set2/mlfq": {
+    "intervals": [
+      [
+        0,
+        1,
+        "P7"
+      ],
+      [
+        1,
+        2,
+        "P5"
+      ],
+      [
+        2,
+        3,
+        "P4"
+      ],
+      [
+        3,
+        4,
+        "P20"
+      ],
+      [
+        4,
+        5,
+        "P1"
+      ],
+      [
+        5,
+        6,
+        "P13"
+      ],
+      [
+        6,
+        7,
+        "P14"
+      ],
+      [
+        7,
+        8,
+        "P3"
+      ],
+      [
+        8,
+        9,
+        "P10"
+      ],
+      [
+        9,
+        10,
+        "P6"
+      ],
+      [
+        10,
+        11,
+        "P12"
+      ],
+      [
+        11,
+        12,
+        "P2"
+      ],
+      [
+        12,
+        13,
+        "P9"
+      ],
+      [
+        13,
+        14,
+        "P15"
+      ],
+      [
+        14,
+        15,
+        "P18"
+      ],
+      [
+        15,
+        16,
+        "P11"
+      ],
+      [
+        16,
+        17,
+        "P19"
+      ],
+      [
+        17,
+        18,
+        "P17"
+      ],
+      [
+        18,
+        19,
+        "P8"
+      ],
+      [
+        19,
+        20,
+        "P16"
+      ],
+      [
+        20,
+        21,
+        "P7"
+      ],
+      [
+        21,
+        22,
+        "P5"
+      ],
+      [
+        22,
+        23,
+        "P4"
+      ],
+      [
+        23,
+        24,
+        "P20"
+      ],
+      [
+        24,
+        25,
+        "P1"
+      ],
+      [
+        25,
+        26,
+        "P13"
+      ],
+      [
+        26,
+        27,
+        "P14"
+      ],
+      [
+        27,
+        28,
+        "P3"
+      ],
+      [
+        28,
+        29,
+        "P10"
+      ],
+      [
+        29,
+        30,
+        "P6"
+      ],
+      [
+        30,
+        31,
+        "P12"
+      ],
+      [
+        31,
+        32,
+        "P2"
+      ],
+      [
+        32,
+        33,
+        "P9"
+      ],
+      [
+        33,
+        34,
+        "P15"
+      ],
+      [
+        34,
+        35,
+        "P18"
+      ],
+      [
+        35,
+        36,
+        "P11"
+      ],
+      [
+        36,
+        37,
+        "P19"
+      ],
+      [
+        37,
+        38,
+        "P17"
+      ],
+      [
+        38,
+        39,
+        "P8"
+      ],
+      [
+        39,
+        40,
+        "P16"
+      ],
+      [
+        40,
+        41,
+        "P7"
+      ],
+      [
+        41,
+        42,
+        "P5"
+      ],
+      [
+        42,
+        43,
+        "P4"
+      ],
+      [
+        43,
+        44,
+        "P20"
+      ],
+      [
+        44,
+        45,
+        "P1"
+      ],
+      [
+        45,
+        46,
+        "P13"
+      ],
+      [
+        46,
+        47,
+        "P14"
+      ],
+      [
+        47,
+        48,
+        "P3"
+      ],
+      [
+        48,
+        49,
+        "P10"
+      ],
+      [
+        49,
+        50,
+        "P6"
+      ],
+      [
+        50,
+        51,
+        "P12"
+      ],
+      [
+        51,
+        52,
+        "P2"
+      ],
+      [
+        52,
+        53,
+        "P9"
+      ],
+      [
+        53,
+        54,
+        "P15"
+      ],
+      [
+        54,
+        55,
+        "P18"
+      ],
+      [
+        55,
+        56,
+        "P11"
+      ],
+      [
+        56,
+        57,
+        "P19"
+      ],
+      [
+        57,
+        58,
+        "P17"
+      ],
+      [
+        58,
+        59,
+        "P8"
+      ],
+      [
+        59,
+        60,
+        "P16"
+      ],
+      [
+        60,
+        61,
+        "P7"
+      ],
+      [
+        61,
+        62,
+        "P5"
+      ],
+      [
+        62,
+        63,
+        "P4"
+      ],
+      [
+        63,
+        64,
+        "P20"
+      ],
+      [
+        64,
+        65,
+        "P1"
+      ],
+      [
+        65,
+        66,
+        "P13"
+      ],
+      [
+        66,
+        67,
+        "P14"
+      ],
+      [
+        67,
+        68,
+        "P3"
+      ],
+      [
+        68,
+        69,
+        "P10"
+      ],
+      [
+        69,
+        70,
+        "P6"
+      ],
+      [
+        70,
+        71,
+        "P12"
+      ],
+      [
+        71,
+        72,
+        "P2"
+      ],
+      [
+        72,
+        73,
+        "P9"
+      ],
+      [
+        73,
+        74,
+        "P15"
+      ],
+      [
+        74,
+        75,
+        "P18"
+      ],
+      [
+        75,
+        76,
+        "P11"
+      ],
+      [
+        76,
+        77,
+        "P19"
+      ],
+      [
+        77,
+        78,
+        "P17"
+      ],
+      [
+        78,
+        79,
+        "P8"
+      ],
+      [
+        79,
+        80,
+        "P16"
+      ],
+      [
+        80,
+        81,
+        "P7"
+      ],
+      [
+        81,
+        82,
+        "P5"
+      ],
+      [
+        82,
+        83,
+        "P4"
+      ],
+      [
+        83,
+        84,
+        "P20"
+      ],
+      [
+        84,
+        85,
+        "P1"
+      ],
+      [
+        85,
+        86,
+        "P13"
+      ],
+      [
+        86,
+        87,
+        "P14"
+      ],
+      [
+        87,
+        88,
+        "P3"
+      ],
+      [
+        88,
+        89,
+        "P10"
+      ],
+      [
+        89,
+        90,
+        "P6"
+      ],
+      [
+        90,
+        91,
+        "P12"
+      ],
+      [
+        91,
+        92,
+        "P2"
+      ],
+      [
+        92,
+        93,
+        "P9"
+      ],
+      [
+        93,
+        94,
+        "P15"
+      ],
+      [
+        94,
+        95,
+        "P18"
+      ],
+      [
+        95,
+        96,
+        "P11"
+      ],
+      [
+        96,
+        97,
+        "P19"
+      ],
+      [
+        97,
+        98,
+        "P17"
+      ],
+      [
+        98,
+        99,
+        "P8"
+      ],
+      [
+        99,
+        100,
+        "P16"
+      ],
+      [
+        100,
+        101,
+        "P7"
+      ],
+      [
+        101,
+        102,
+        "P5"
+      ],
+      [
+        102,
+        103,
+        "P4"
+      ],
+      [
+        103,
+        104,
+        "P20"
+      ],
+      [
+        104,
+        105,
+        "P1"
+      ],
+      [
+        105,
+        106,
+        "P13"
+      ],
+      [
+        106,
+        107,
+        "P14"
+      ],
+      [
+        107,
+        108,
+        "P3"
+      ],
+      [
+        108,
+        109,
+        "P10"
+      ],
+      [
+        109,
+        110,
+        "P6"
+      ],
+      [
+        110,
+        111,
+        "P12"
+      ],
+      [
+        111,
+        112,
+        "P2"
+      ],
+      [
+        112,
+        113,
+        "P9"
+      ],
+      [
+        113,
+        114,
+        "P15"
+      ],
+      [
+        114,
+        115,
+        "P18"
+      ],
+      [
+        115,
+        116,
+        "P11"
+      ],
+      [
+        116,
+        117,
+        "P19"
+      ],
+      [
+        117,
+        118,
+        "P17"
+      ],
+      [
+        118,
+        119,
+        "P8"
+      ],
+      [
+        119,
+        120,
+        "P16"
+      ],
+      [
+        120,
+        121,
+        "P7"
+      ],
+      [
+        121,
+        122,
+        "P5"
+      ],
+      [
+        122,
+        123,
+        "P4"
+      ],
+      [
+        123,
+        124,
+        "P20"
+      ],
+      [
+        124,
+        125,
+        "P1"
+      ],
+      [
+        125,
+        126,
+        "P13"
+      ],
+      [
+        126,
+        127,
+        "P14"
+      ],
+      [
+        127,
+        128,
+        "P3"
+      ],
+      [
+        128,
+        129,
+        "P10"
+      ],
+      [
+        129,
+        130,
+        "P6"
+      ],
+      [
+        130,
+        131,
+        "P12"
+      ],
+      [
+        131,
+        132,
+        "P2"
+      ],
+      [
+        132,
+        133,
+        "P9"
+      ],
+      [
+        133,
+        134,
+        "P15"
+      ],
+      [
+        134,
+        135,
+        "P18"
+      ],
+      [
+        135,
+        136,
+        "P11"
+      ],
+      [
+        136,
+        137,
+        "P19"
+      ],
+      [
+        137,
+        138,
+        "P17"
+      ],
+      [
+        138,
+        139,
+        "P8"
+      ],
+      [
+        139,
+        140,
+        "P16"
+      ],
+      [
+        140,
+        141,
+        "P7"
+      ],
+      [
+        141,
+        142,
+        "P5"
+      ],
+      [
+        142,
+        143,
+        "P4"
+      ],
+      [
+        143,
+        144,
+        "P20"
+      ],
+      [
+        144,
+        145,
+        "P1"
+      ],
+      [
+        145,
+        146,
+        "P13"
+      ],
+      [
+        146,
+        147,
+        "P14"
+      ],
+      [
+        147,
+        148,
+        "P3"
+      ],
+      [
+        148,
+        149,
+        "P10"
+      ],
+      [
+        149,
+        150,
+        "P6"
+      ],
+      [
+        150,
+        151,
+        "P12"
+      ],
+      [
+        151,
+        152,
+        "P2"
+      ],
+      [
+        152,
+        153,
+        "P9"
+      ],
+      [
+        153,
+        154,
+        "P15"
+      ],
+      [
+        154,
+        155,
+        "P18"
+      ],
+      [
+        155,
+        156,
+        "P11"
+      ],
+      [
+        156,
+        157,
+        "P19"
+      ],
+      [
+        157,
+        158,
+        "P17"
+      ],
+      [
+        158,
+        159,
+        "P8"
+      ],
+      [
+        159,
+        160,
+        "P16"
+      ],
+      [
+        160,
+        161,
+        "P7"
+      ],
+      [
+        161,
+        162,
+        "P5"
+      ],
+      [
+        162,
+        163,
+        "P4"
+      ],
+      [
+        163,
+        164,
+        "P20"
+      ],
+      [
+        164,
+        165,
+        "P1"
+      ],
+      [
+        165,
+        166,
+        "P13"
+      ],
+      [
+        166,
+        167,
+        "P14"
+      ],
+      [
+        167,
+        168,
+        "P3"
+      ],
+      [
+        168,
+        169,
+        "P10"
+      ],
+      [
+        169,
+        170,
+        "P6"
+      ],
+      [
+        170,
+        171,
+        "P12"
+      ],
+      [
+        171,
+        172,
+        "P2"
+      ],
+      [
+        172,
+        173,
+        "P9"
+      ],
+      [
+        173,
+        174,
+        "P15"
+      ],
+      [
+        174,
+        175,
+        "P18"
+      ],
+      [
+        175,
+        176,
+        "P11"
+      ],
+      [
+        176,
+        177,
+        "P19"
+      ],
+      [
+        177,
+        178,
+        "P17"
+      ],
+      [
+        178,
+        179,
+        "P8"
+      ],
+      [
+        179,
+        180,
+        "P16"
+      ],
+      [
+        180,
+        181,
+        "P7"
+      ],
+      [
+        181,
+        182,
+        "P5"
+      ],
+      [
+        182,
+        183,
+        "P4"
+      ],
+      [
+        183,
+        184,
+        "P20"
+      ],
+      [
+        184,
+        185,
+        "P1"
+      ],
+      [
+        185,
+        186,
+        "P13"
+      ],
+      [
+        186,
+        187,
+        "P14"
+      ],
+      [
+        187,
+        188,
+        "P3"
+      ],
+      [
+        188,
+        189,
+        "P10"
+      ],
+      [
+        189,
+        190,
+        "P6"
+      ],
+      [
+        190,
+        191,
+        "P12"
+      ],
+      [
+        191,
+        192,
+        "P2"
+      ],
+      [
+        192,
+        193,
+        "P9"
+      ],
+      [
+        193,
+        194,
+        "P15"
+      ],
+      [
+        194,
+        195,
+        "P18"
+      ],
+      [
+        195,
+        196,
+        "P11"
+      ],
+      [
+        196,
+        197,
+        "P19"
+      ],
+      [
+        197,
+        198,
+        "P17"
+      ],
+      [
+        198,
+        199,
+        "P8"
+      ],
+      [
+        199,
+        200,
+        "P16"
+      ],
+      [
+        200,
+        201,
+        "P7"
+      ],
+      [
+        201,
+        202,
+        "P5"
+      ],
+      [
+        202,
+        203,
+        "P4"
+      ],
+      [
+        203,
+        204,
+        "P20"
+      ],
+      [
+        204,
+        205,
+        "P1"
+      ],
+      [
+        205,
+        206,
+        "P13"
+      ],
+      [
+        206,
+        207,
+        "P14"
+      ],
+      [
+        207,
+        208,
+        "P3"
+      ],
+      [
+        208,
+        209,
+        "P10"
+      ],
+      [
+        209,
+        210,
+        "P6"
+      ],
+      [
+        210,
+        211,
+        "P12"
+      ],
+      [
+        211,
+        212,
+        "P2"
+      ],
+      [
+        212,
+        213,
+        "P9"
+      ],
+      [
+        213,
+        214,
+        "P15"
+      ],
+      [
+        214,
+        215,
+        "P18"
+      ],
+      [
+        215,
+        216,
+        "P11"
+      ],
+      [
+        216,
+        217,
+        "P19"
+      ],
+      [
+        217,
+        218,
+        "P17"
+      ],
+      [
+        218,
+        219,
+        "P8"
+      ],
+      [
+        219,
+        220,
+        "P16"
+      ],
+      [
+        220,
+        221,
+        "P7"
+      ],
+      [
+        221,
+        222,
+        "P5"
+      ],
+      [
+        222,
+        223,
+        "P4"
+      ],
+      [
+        223,
+        224,
+        "P20"
+      ],
+      [
+        224,
+        225,
+        "P1"
+      ],
+      [
+        225,
+        226,
+        "P13"
+      ],
+      [
+        226,
+        227,
+        "P14"
+      ],
+      [
+        227,
+        228,
+        "P3"
+      ],
+      [
+        228,
+        229,
+        "P10"
+      ],
+      [
+        229,
+        230,
+        "P6"
+      ],
+      [
+        230,
+        231,
+        "P12"
+      ],
+      [
+        231,
+        232,
+        "P2"
+      ],
+      [
+        232,
+        233,
+        "P9"
+      ],
+      [
+        233,
+        234,
+        "P15"
+      ],
+      [
+        234,
+        235,
+        "P18"
+      ],
+      [
+        235,
+        236,
+        "P11"
+      ],
+      [
+        236,
+        237,
+        "P19"
+      ],
+      [
+        237,
+        238,
+        "P17"
+      ],
+      [
+        238,
+        239,
+        "P8"
+      ],
+      [
+        239,
+        240,
+        "P16"
+      ],
+      [
+        240,
+        241,
+        "P7"
+      ],
+      [
+        241,
+        242,
+        "P4"
+      ],
+      [
+        242,
+        243,
+        "P20"
+      ],
+      [
+        243,
+        244,
+        "P13"
+      ],
+      [
+        244,
+        245,
+        "P14"
+      ],
+      [
+        245,
+        246,
+        "P3"
+      ],
+      [
+        246,
+        247,
+        "P10"
+      ],
+      [
+        247,
+        248,
+        "P6"
+      ],
+      [
+        248,
+        249,
+        "P12"
+      ],
+      [
+        249,
+        250,
+        "P2"
+      ],
+      [
+        250,
+        251,
+        "P9"
+      ],
+      [
+        251,
+        252,
+        "P15"
+      ],
+      [
+        252,
+        253,
+        "P18"
+      ],
+      [
+        253,
+        254,
+        "P11"
+      ],
+      [
+        254,
+        255,
+        "P19"
+      ],
+      [
+        255,
+        256,
+        "P17"
+      ],
+      [
+        256,
+        257,
+        "P8"
+      ],
+      [
+        257,
+        258,
+        "P16"
+      ],
+      [
+        258,
+        260,
+        "P7"
+      ],
+      [
+        260,
+        261,
+        "P4"
+      ],
+      [
+        261,
+        262,
+        "P13"
+      ],
+      [
+        262,
+        263,
+        "P14"
+      ],
+      [
+        263,
+        264,
+        "P3"
+      ],
+      [
+        264,
+        265,
+        "P10"
+      ],
+      [
+        265,
+        266,
+        "P6"
+      ],
+      [
+        266,
+        267,
+        "P12"
+      ],
+      [
+        267,
+        268,
+        "P2"
+      ],
+      [
+        268,
+        269,
+        "P9"
+      ],
+      [
+        269,
+        270,
+        "P15"
+      ],
+      [
+        270,
+        271,
+        "P18"
+      ],
+      [
+        271,
+        272,
+        "P11"
+      ],
+      [
+        272,
+        273,
+        "P19"
+      ],
+      [
+        273,
+        274,
+        "P17"
+      ],
+      [
+        274,
+        275,
+        "P8"
+      ],
+      [
+        275,
+        276,
+        "P16"
+      ],
+      [
+        276,
+        277,
+        "P7"
+      ],
+      [
+        277,
+        279,
+        "P4"
+      ],
+      [
+        279,
+        280,
+        "P14"
+      ],
+      [
+        280,
+        281,
+        "P3"
+      ],
+      [
+        281,
+        282,
+        "P10"
+      ],
+      [
+        282,
+        283,
+        "P6"
+      ],
+      [
+        283,
+        284,
+        "P12"
+      ],
+      [
+        284,
+        285,
+        "P2"
+      ],
+      [
+        285,
+        286,
+        "P9"
+      ],
+      [
+        286,
+        287,
+        "P15"
+      ],
+      [
+        287,
+        288,
+        "P18"
+      ],
+      [
+        288,
+        289,
+        "P11"
+      ],
+      [
+        289,
+        290,
+        "P19"
+      ],
+      [
+        290,
+        291,
+        "P8"
+      ],
+      [
+        291,
+        292,
+        "P16"
+      ],
+      [
+        292,
+        293,
+        "P7"
+      ],
+      [
+        293,
+        294,
+        "P4"
+      ],
+      [
+        294,
+        295,
+        "P14"
+      ],
+      [
+        295,
+        297,
+        "P3"
+      ],
+      [
+        297,
+        299,
+        "P10"
+      ],
+      [
+        299,
+        300,
+        "P6"
+      ],
+      [
+        300,
+        301,
+        "P12"
+      ],
+      [
+        301,
+        302,
+        "P2"
+      ],
+      [
+        302,
+        303,
+        "P9"
+      ],
+      [
+        303,
+        304,
+        "P15"
+      ],
+      [
+        304,
+        305,
+        "P18"
+      ],
+      [
+        305,
+        306,
+        "P11"
+      ],
+      [
+        306,
+        307,
+        "P19"
+      ],
+      [
+        307,
+        308,
+        "P8"
+      ],
+      [
+        308,
+        309,
+        "P16"
+      ],
+      [
+        309,
+        310,
+        "P7"
+      ],
+      [
+        310,
+        311,
+        "P4"
+      ],
+      [
+        311,
+        312,
+        "P14"
+      ],
+      [
+        312,
+        313,
+        "P3"
+      ],
+      [
+        313,
+        314,
+        "P10"
+      ],
+      [
+        314,
+        315,
+        "P6"
+      ],
+      [
+        315,
+        317,
+        "P12"
+      ],
+      [
+        317,
+        319,
+        "P2"
+      ],
+      [
+        319,
+        320,
+        "P9"
+      ],
+      [
+        320,
+        321,
+        "P15"
+      ],
+      [
+        321,
+        322,
+        "P18"
+      ],
+      [
+        322,
+        323,
+        "P11"
+      ],
+      [
+        323,
+        324,
+        "P19"
+      ],
+      [
+        324,
+        325,
+        "P8"
+      ],
+      [
+        325,
+        326,
+        "P16"
+      ],
+      [
+        326,
+        327,
+        "P7"
+      ],
+      [
+        327,
+        328,
+        "P4"
+      ],
+      [
+        328,
+        329,
+        "P14"
+      ],
+      [
+        329,
+        330,
+        "P3"
+      ],
+      [
+        330,
+        331,
+        "P10"
+      ],
+      [
+        331,
+        332,
+        "P6"
+      ],
+      [
+        332,
+        333,
+        "P12"
+      ],
+      [
+        333,
+        334,
+        "P2"
+      ],
+      [
+        334,
+        335,
+        "P9"
+      ],
+      [
+        335,
+        337,
+        "P15"
+      ],
+      [
+        337,
+        339,
+        "P18"
+      ],
+      [
+        339,
+        340,
+        "P11"
+      ],
+      [
+        340,
+        341,
+        "P19"
+      ],
+      [
+        341,
+        342,
+        "P8"
+      ],
+      [
+        342,
+        343,
+        "P16"
+      ],
+      [
+        343,
+        344,
+        "P7"
+      ],
+      [
+        344,
+        345,
+        "P4"
+      ],
+      [
+        345,
+        346,
+        "P14"
+      ],
+      [
+        346,
+        347,
+        "P3"
+      ],
+      [
+        347,
+        348,
+        "P10"
+      ],
+      [
+        348,
+        349,
+        "P6"
+      ],
+      [
+        349,
+        350,
+        "P12"
+      ],
+      [
+        350,
+        351,
+        "P9"
+      ],
+      [
+        351,
+        352,
+        "P15"
+      ],
+      [
+        352,
+        353,
+        "P18"
+      ],
+      [
+        353,
+        354,
+        "P11"
+      ],
+      [
+        354,
+        356,
+        "P19"
+      ],
+      [
+        356,
+        357,
+        "P8"
+      ],
+      [
+        357,
+        359,
+        "P16"
+      ],
+      [
+        359,
+        360,
+        "P7"
+      ],
+      [
+        360,
+        361,
+        "P4"
+      ],
+      [
+        361,
+        362,
+        "P14"
+      ],
+      [
+        362,
+        363,
+        "P3"
+      ],
+      [
+        363,
+        364,
+        "P10"
+      ],
+      [
+        364,
+        365,
+        "P12"
+      ],
+      [
+        365,
+        366,
+        "P9"
+      ],
+      [
+        366,
+        367,
+        "P15"
+      ],
+      [
+        367,
+        368,
+        "P18"
+      ],
+      [
+        368,
+        369,
+        "P11"
+      ],
+      [
+        369,
+        370,
+        "P19"
+      ],
+      [
+        370,
+        371,
+        "P16"
+      ],
+      [
+        371,
+        372,
+        "P7"
+      ],
+      [
+        372,
+        374,
+        "P4"
+      ],
+      [
+        374,
+        376,
+        "P14"
+      ],
+      [
+        376,
+        378,
+        "P3"
+      ],
+      [
+        378,
+        380,
+        "P10"
+      ],
+      [
+        380,
+        381,
+        "P12"
+      ],
+      [
+        381,
+        382,
+        "P9"
+      ],
+      [
+        382,
+        383,
+        "P15"
+      ],
+      [
+        383,
+        384,
+        "P18"
+      ],
+      [
+        384,
+        385,
+        "P19"
+      ],
+      [
+        385,
+        386,
+        "P16"
+      ],
+      [
+        386,
+        387,
+        "P7"
+      ],
+      [
+        387,
+        388,
+        "P4"
+      ],
+      [
+        388,
+        389,
+        "P14"
+      ],
+      [
+        389,
+        390,
+        "P3"
+      ],
+      [
+        390,
+        391,
+        "P10"
+      ],
+      [
+        391,
+        393,
+        "P12"
+      ],
+      [
+        393,
+        395,
+        "P9"
+      ],
+      [
+        395,
+        397,
+        "P15"
+      ],
+      [
+        397,
+        399,
+        "P18"
+      ],
+      [
+        399,
+        400,
+        "P19"
+      ],
+      [
+        400,
+        401,
+        "P16"
+      ],
+      [
+        401,
+        402,
+        "P7"
+      ],
+      [
+        402,
+        403,
+        "P4"
+      ],
+      [
+        403,
+        404,
+        "P3"
+      ],
+      [
+        404,
+        405,
+        "P10"
+      ],
+      [
+        405,
+        406,
+        "P12"
+      ],
+      [
+        406,
+        407,
+        "P9"
+      ],
+      [
+        407,
+        408,
+        "P15"
+      ],
+      [
+        408,
+        409,
+        "P18"
+      ],
+      [
+        409,
+        410,
+        "P19"
+      ],
+      [
+        410,
+        412,
+        "P16"
+      ],
+      [
+        412,
+        414,
+        "P7"
+      ],
+      [
+        414,
+        416,
+        "P4"
+      ],
+      [
+        416,
+        418,
+        "P3"
+      ],
+      [
+        418,
+        420,
+        "P10"
+      ],
+      [
+        420,
+        421,
+        "P12"
+      ],
+      [
+        421,
+        422,
+        "P9"
+      ],
+      [
+        422,
+        423,
+        "P15"
+      ],
+      [
+        423,
+        424,
+        "P18"
+      ],
+      [
+        424,
+        425,
+        "P19"
+      ],
+      [
+        425,
+        426,
+        "P16"
+      ],
+      [
+        426,
+        427,
+        "P7"
+      ],
+      [
+        427,
+        428,
+        "P4"
+      ],
+      [
+        428,
+        429,
+        "P3"
+      ],
+      [
+        429,
+        430,
+        "P10"
+      ],
+      [
+        430,
+        432,
+        "P12"
+      ],
+      [
+        432,
+        434,
+        "P9"
+      ],
+      [
+        434,
+        436,
+        "P15"
+      ],
+      [
+        436,
+        438,
+        "P18"
+      ],
+      [
+        438,
+        440,
+        "P19"
+      ],
+      [
+        440,
+        441,
+        "P16"
+      ],
+      [
+        441,
+        442,
+        "P7"
+      ],
+      [
+        442,
+        443,
+        "P4"
+      ],
+      [
+        443,
+        444,
+        "P3"
+      ],
+      [
+        444,
+        445,
+        "P10"
+      ],
+      [
+        445,
+        446,
+        "P12"
+      ],
+      [
+        446,
+        447,
+        "P9"
+      ],
+      [
+        447,
+        448,
+        "P15"
+      ],
+      [
+        448,
+        449,
+        "P18"
+      ],
+      [
+        449,
+        450,
+        "P19"
+      ],
+      [
+        450,
+        452,
+        "P16"
+      ],
+      [
+        452,
+        453,
+        "P7"
+      ],
+      [
+        453,
+        454,
+        "P4"
+      ],
+      [
+        454,
+        456,
+        "P3"
+      ],
+      [
+        456,
+        458,
+        "P10"
+      ],
+      [
+        458,
+        460,
+        "P12"
+      ],
+      [
+        460,
+        461,
+        "P9"
+      ],
+      [
+        461,
+        462,
+        "P15"
+      ],
+      [
+        462,
+        463,
+        "P18"
+      ],
+      [
+        463,
+        464,
+        "P19"
+      ],
+      [
+        464,
+        465,
+        "P3"
+      ],
+      [
+        465,
+        466,
+        "P10"
+      ],
+      [
+        466,
+        467,
+        "P12"
+      ],
+      [
+        467,
+        469,
+        "P9"
+      ],
+      [
+        469,
+        471,
+        "P15"
+      ],
+      [
+        471,
+        473,
+        "P18"
+      ],
+      [
+        473,
+        474,
+        "P19"
+      ],
+      [
+        474,
+        476,
+        "P3"
+      ],
+      [
+        476,
+        478,
+        "P10"
+      ],
+      [
+        478,
+        480,
+        "P12"
+      ],
+      [
+        480,
+        481,
+        "P9"
+      ],
+      [
+        481,
+        482,
+        "P15"
+      ],
+      [
+        482,
+        483,
+        "P18"
+      ],
+      [
+        483,
+        484,
+        "P3"
+      ],
+      [
+        484,
+        485,
+        "P12"
+      ],
+      [
+        485,
+        487,
+        "P9"
+      ],
+      [
+        487,
+        489,
+        "P15"
+      ],
+      [
+        489,
+        491,
+        "P18"
+      ],
+      [
+        491,
+        492,
+        "P12"
+      ],
+      [
+        492,
+        495,
+        "P9"
+      ],
+      [
+        495,
+        497,
+        "P15"
+      ],
+      [
+        497,
+        500,
+        "P18"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "P1",
+        "completion": 225,
+        "turnaround": 222,
+        "waiting": 210,
+        "response": 1
+      },
+      {
+        "pid": "P2",
+        "completion": 334,
+        "turnaround": 326,
+        "waiting": 307,
+        "response": 3
+      },
+      {
+        "pid": "P3",
+        "completion": 484,
+        "turnaround": 480,
+        "waiting": 445,
+        "response": 3
+      },
+      {
+        "pid": "P4",
+        "completion": 454,
+        "turnaround": 452,
+        "waiting": 422,
+        "response": 0
+      },
+      {
+        "pid": "P5",
+        "completion": 222,
+        "turnaround": 221,
+        "waiting": 209,
+        "response": 0
+      },
+      {
+        "pid": "P6",
+        "completion": 349,
+        "turnaround": 343,
+        "waiting": 324,
+        "response": 3
+      },
+      {
+        "pid": "P7",
+        "completion": 453,
+        "turnaround": 453,
+        "waiting": 424,
+        "response": 0
+      },
+      {
+        "pid": "P8",
+        "completion": 357,
+        "turnaround": 344,
+        "waiting": 325,
+        "response": 5
+      },
+      {
+        "pid": "P9",
+        "completion": 495,
+        "turnaround": 487,
+        "waiting": 450,
+        "response": 4
+      },
+      {
+        "pid": "P10",
+        "completion": 478,
+        "turnaround": 473,
+        "waiting": 439,
+        "response": 3
+      },
+      {
+        "pid": "P11",
+        "completion": 369,
+        "turnaround": 359,
+        "waiting": 339,
+        "response": 5
+      },
+      {
+        "pid": "P12",
+        "completion": 492,
+        "turnaround": 486,
+        "waiting": 450,
+        "response": 4
+      },
+      {
+        "pid": "P13",
+        "completion": 262,
+        "turnaround": 259,
+        "waiting": 245,
+        "response": 2
+      },
+      {
+        "pid": "P14",
+        "completion": 389,
+        "turnaround": 386,
+        "waiting": 363,
+        "response": 3
+      },
+      {
+        "pid": "P15",
+        "completion": 497,
+        "turnaround": 489,
+        "waiting": 452,
+        "response": 5
+      },
+      {
+        "pid": "P16",
+        "completion": 452,
+        "turnaround": 438,
+        "waiting": 409,
+        "response": 5
+      },
+      {
+        "pid": "P17",
+        "completion": 274,
+        "turnaround": 262,
+        "waiting": 248,
+        "response": 5
+      },
+      {
+        "pid": "P18",
+        "completion": 500,
+        "turnaround": 491,
+        "waiting": 453,
+        "response": 5
+      },
+      {
+        "pid": "P19",
+        "completion": 474,
+        "turnaround": 463,
+        "waiting": 433,
+        "response": 5
+      },
+      {
+        "pid": "P20",
+        "completion": 243,
+        "turnaround": 241,
+        "waiting": 228,
+        "response": 1
+      }
+    ],
+    "mean_waiting": 358.75,
+    "mean_turnaround": 383.75,
+    "mean_response": 3.1,
+    "cpu_utilization": 100.0,
+    "switches": 453
+  },
+  "set3/fcfs": {
+    "intervals": [
+      [
+        0,
+        80,
+        "LONG"
+      ],
+      [
+        80,
+        82,
+        "S1"
+      ],
+      [
+        82,
+        85,
+        "S2"
+      ],
+      [
+        85,
+        86,
+        "S3"
+      ],
+      [
+        86,
+        88,
+        "S4"
+      ],
+      [
+        88,
+        91,
+        "S5"
+      ],
+      [
+        91,
+        92,
+        "S6"
+      ],
+      [
+        92,
+        94,
+        "S7"
+      ],
+      [
+        94,
+        97,
+        "S8"
+      ],
+      [
+        97,
+        98,
+        "S9"
+      ],
+      [
+        98,
+        100,
+        "S10"
+      ],
+      [
+        100,
+        103,
+        "S11"
+      ],
+      [
+        103,
+        104,
+        "S12"
+      ],
+      [
+        104,
+        106,
+        "S13"
+      ],
+      [
+        106,
+        109,
+        "S14"
+      ],
+      [
+        109,
+        110,
+        "S15"
+      ],
+      [
+        110,
+        112,
+        "S16"
+      ],
+      [
+        112,
+        115,
+        "S17"
+      ],
+      [
+        115,
+        116,
+        "S18"
+      ],
+      [
+        116,
+        118,
+        "S19"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "LONG",
+        "completion": 80,
+        "turnaround": 80,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S1",
+        "completion": 82,
+        "turnaround": 80,
+        "waiting": 78,
+        "response": 78
+      },
+      {
+        "pid": "S2",
+        "completion": 85,
+        "turnaround": 81,
+        "waiting": 78,
+        "response": 78
+      },
+      {
+        "pid": "S3",
+        "completion": 86,
+        "turnaround": 80,
+        "waiting": 79,
+        "response": 79
+      },
+      {
+        "pid": "S4",
+        "completion": 88,
+        "turnaround": 80,
+        "waiting": 78,
+        "response": 78
+      },
+      {
+        "pid": "S5",
+        "completion": 91,
+        "turnaround": 81,
+        "waiting": 78,
+        "response": 78
+      },
+      {
+        "pid": "S6",
+        "completion": 92,
+        "turnaround": 80,
+        "waiting": 79,
+        "response": 79
+      },
+      {
+        "pid": "S7",
+        "completion": 94,
+        "turnaround": 80,
+        "waiting": 78,
+        "response": 78
+      },
+      {
+        "pid": "S8",
+        "completion": 97,
+        "turnaround": 81,
+        "waiting": 78,
+        "response": 78
+      },
+      {
+        "pid": "S9",
+        "completion": 98,
+        "turnaround": 80,
+        "waiting": 79,
+        "response": 79
+      },
+      {
+        "pid": "S10",
+        "completion": 100,
+        "turnaround": 80,
+        "waiting": 78,
+        "response": 78
+      },
+      {
+        "pid": "S11",
+        "completion": 103,
+        "turnaround": 81,
+        "waiting": 78,
+        "response": 78
+      },
+      {
+        "pid": "S12",
+        "completion": 104,
+        "turnaround": 80,
+        "waiting": 79,
+        "response": 79
+      },
+      {
+        "pid": "S13",
+        "completion": 106,
+        "turnaround": 80,
+        "waiting": 78,
+        "response": 78
+      },
+      {
+        "pid": "S14",
+        "completion": 109,
+        "turnaround": 81,
+        "waiting": 78,
+        "response": 78
+      },
+      {
+        "pid": "S15",
+        "completion": 110,
+        "turnaround": 80,
+        "waiting": 79,
+        "response": 79
+      },
+      {
+        "pid": "S16",
+        "completion": 112,
+        "turnaround": 80,
+        "waiting": 78,
+        "response": 78
+      },
+      {
+        "pid": "S17",
+        "completion": 115,
+        "turnaround": 81,
+        "waiting": 78,
+        "response": 78
+      },
+      {
+        "pid": "S18",
+        "completion": 116,
+        "turnaround": 80,
+        "waiting": 79,
+        "response": 79
+      },
+      {
+        "pid": "S19",
+        "completion": 118,
+        "turnaround": 80,
+        "waiting": 78,
+        "response": 78
+      }
+    ],
+    "mean_waiting": 74.4,
+    "mean_turnaround": 80.3,
+    "mean_response": 74.4,
+    "cpu_utilization": 100.0,
+    "switches": 19
+  },
+  "set3/sjf": {
+    "intervals": [
+      [
+        0,
+        80,
+        "LONG"
+      ],
+      [
+        80,
+        81,
+        "S3"
+      ],
+      [
+        81,
+        82,
+        "S6"
+      ],
+      [
+        82,
+        83,
+        "S9"
+      ],
+      [
+        83,
+        84,
+        "S12"
+      ],
+      [
+        84,
+        85,
+        "S15"
+      ],
+      [
+        85,
+        86,
+        "S18"
+      ],
+      [
+        86,
+        88,
+        "S1"
+      ],
+      [
+        88,
+        90,
+        "S4"
+      ],
+      [
+        90,
+        92,
+        "S7"
+      ],
+      [
+        92,
+        94,
+        "S10"
+      ],
+      [
+        94,
+        96,
+        "S13"
+      ],
+      [
+        96,
+        98,
+        "S16"
+      ],
+      [
+        98,
+        100,
+        "S19"
+      ],
+      [
+        100,
+        103,
+        "S2"
+      ],
+      [
+        103,
+        106,
+        "S5"
+      ],
+      [
+        106,
+        109,
+        "S8"
+      ],
+      [
+        109,
+        112,
+        "S11"
+      ],
+      [
+        112,
+        115,
+        "S14"
+      ],
+      [
+        115,
+        118,
+        "S17"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "LONG",
+        "completion": 80,
+        "turnaround": 80,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S1",
+        "completion": 88,
+        "turnaround": 86,
+        "waiting": 84,
+        "response": 84
+      },
+      {
+        "pid": "S2",
+        "completion": 103,
+        "turnaround": 99,
+        "waiting": 96,
+        "response": 96
+      },
+      {
+        "pid": "S3",
+        "completion": 81,
+        "turnaround": 75,
+        "waiting": 74,
+        "response": 74
+      },
+      {
+        "pid": "S4",
+        "completion": 90,
+        "turnaround": 82,
+        "waiting": 80,
+        "response": 80
+      },
+      {
+        "pid": "S5",
+        "completion": 106,
+        "turnaround": 96,
+        "waiting": 93,
+        "response": 93
+      },
+      {
+        "pid": "S6",
+        "completion": 82,
+        "turnaround": 70,
+        "waiting": 69,
+        "response": 69
+      },
+      {
+        "pid": "S7",
+        "completion": 92,
+        "turnaround": 78,
+        "waiting": 76,
+        "response": 76
+      },
+      {
+        "pid": "S8",
+        "completion": 109,
+        "turnaround": 93,
+        "waiting": 90,
+        "response": 90
+      },
+      {
+        "pid": "S9",
+        "completion": 83,
+        "turnaround": 65,
+        "waiting": 64,
+        "response": 64
+      },
+      {
+        "pid": "S10",
+        "completion": 94,
+        "turnaround": 74,
+        "waiting": 72,
+        "response": 72
+      },
+      {
+        "pid": "S11",
+        "completion": 112,
+        "turnaround": 90,
+        "waiting": 87,
+        "response": 87
+      },
+      {
+        "pid": "S12",
+        "completion": 84,
+        "turnaround": 60,
+        "waiting": 59,
+        "response": 59
+      },
+      {
+        "pid": "S13",
+        "completion": 96,
+        "turnaround": 70,
+        "waiting": 68,
+        "response": 68
+      },
+      {
+        "pid": "S14",
+        "completion": 115,
+        "turnaround": 87,
+        "waiting": 84,
+        "response": 84
+      },
+      {
+        "pid": "S15",
+        "completion": 85,
+        "turnaround": 55,
+        "waiting": 54,
+        "response": 54
+      },
+      {
+        "pid": "S16",
+        "completion": 98,
+        "turnaround": 66,
+        "waiting": 64,
+        "response": 64
+      },
+      {
+        "pid": "S17",
+        "completion": 118,
+        "turnaround": 84,
+        "waiting": 81,
+        "response": 81
+      },
+      {
+        "pid": "S18",
+        "completion": 86,
+        "turnaround": 50,
+        "waiting": 49,
+        "response": 49
+      },
+      {
+        "pid": "S19",
+        "completion": 100,
+        "turnaround": 62,
+        "waiting": 60,
+        "response": 60
+      }
+    ],
+    "mean_waiting": 70.2,
+    "mean_turnaround": 76.1,
+    "mean_response": 70.2,
+    "cpu_utilization": 100.0,
+    "switches": 19
+  },
+  "set3/srtf": {
+    "intervals": [
+      [
+        0,
+        2,
+        "LONG"
+      ],
+      [
+        2,
+        4,
+        "S1"
+      ],
+      [
+        4,
+        7,
+        "S2"
+      ],
+      [
+        7,
+        8,
+        "S3"
+      ],
+      [
+        8,
+        10,
+        "S4"
+      ],
+      [
+        10,
+        13,
+        "S5"
+      ],
+      [
+        13,
+        14,
+        "S6"
+      ],
+      [
+        14,
+        16,
+        "S7"
+      ],
+      [
+        16,
+        19,
+        "S8"
+      ],
+      [
+        19,
+        20,
+        "S9"
+      ],
+      [
+        20,
+        22,
+        "S10"
+      ],
+      [
+        22,
+        25,
+        "S11"
+      ],
+      [
+        25,
+        26,
+        "S12"
+      ],
+      [
+        26,
+        28,
+        "S13"
+      ],
+      [
+        28,
+        31,
+        "S14"
+      ],
+      [
+        31,
+        32,
+        "S15"
+      ],
+      [
+        32,
+        34,
+        "S16"
+      ],
+      [
+        34,
+        37,
+        "S17"
+      ],
+      [
+        37,
+        38,
+        "S18"
+      ],
+      [
+        38,
+        40,
+        "S19"
+      ],
+      [
+        40,
+        118,
+        "LONG"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "LONG",
+        "completion": 118,
+        "turnaround": 118,
+        "waiting": 38,
+        "response": 0
+      },
+      {
+        "pid": "S1",
+        "completion": 4,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S2",
+        "completion": 7,
+        "turnaround": 3,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S3",
+        "completion": 8,
+        "turnaround": 2,
+        "waiting": 1,
+        "response": 1
+      },
+      {
+        "pid": "S4",
+        "completion": 10,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S5",
+        "completion": 13,
+        "turnaround": 3,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S6",
+        "completion": 14,
+        "turnaround": 2,
+        "waiting": 1,
+        "response": 1
+      },
+      {
+        "pid": "S7",
+        "completion": 16,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S8",
+        "completion": 19,
+        "turnaround": 3,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S9",
+        "completion": 20,
+        "turnaround": 2,
+        "waiting": 1,
+        "response": 1
+      },
+      {
+        "pid": "S10",
+        "completion": 22,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S11",
+        "completion": 25,
+        "turnaround": 3,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S12",
+        "completion": 26,
+        "turnaround": 2,
+        "waiting": 1,
+        "response": 1
+      },
+      {
+        "pid": "S13",
+        "completion": 28,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S14",
+        "completion": 31,
+        "turnaround": 3,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S15",
+        "completion": 32,
+        "turnaround": 2,
+        "waiting": 1,
+        "response": 1
+      },
+      {
+        "pid": "S16",
+        "completion": 34,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S17",
+        "completion": 37,
+        "turnaround": 3,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S18",
+        "completion": 38,
+        "turnaround": 2,
+        "waiting": 1,
+        "response": 1
+      },
+      {
+        "pid": "S19",
+        "completion": 40,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      }
+    ],
+    "mean_waiting": 2.2,
+    "mean_turnaround": 8.1,
+    "mean_response": 0.3,
+    "cpu_utilization": 100.0,
+    "switches": 20
+  },
+  "set3/rr": {
+    "intervals": [
+      [
+        0,
+        3,
+        "LONG"
+      ],
+      [
+        3,
+        5,
+        "S1"
+      ],
+      [
+        5,
+        8,
+        "LONG"
+      ],
+      [
+        8,
+        11,
+        "S2"
+      ],
+      [
+        11,
+        12,
+        "S3"
+      ],
+      [
+        12,
+        14,
+        "S4"
+      ],
+      [
+        14,
+        17,
+        "LONG"
+      ],
+      [
+        17,
+        20,
+        "S5"
+      ],
+      [
+        20,
+        21,
+        "S6"
+      ],
+      [
+        21,
+        23,
+        "S7"
+      ],
+      [
+        23,
+        26,
+        "S8"
+      ],
+      [
+        26,
+        29,
+        "LONG"
+      ],
+      [
+        29,
+        30,
+        "S9"
+      ],
+      [
+        30,
+        32,
+        "S10"
+      ],
+      [
+        32,
+        35,
+        "S11"
+      ],
+      [
+        35,
+        36,
+        "S12"
+      ],
+      [
+        36,
+        38,
+        "S13"
+      ],
+      [
+        38,
+        41,
+        "S14"
+      ],
+      [
+        41,
+        44,
+        "LONG"
+      ],
+      [
+        44,
+        45,
+        "S15"
+      ],
+      [
+        45,
+        47,
+        "S16"
+      ],
+      [
+        47,
+        50,
+        "S17"
+      ],
+      [
+        50,
+        51,
+        "S18"
+      ],
+      [
+        51,
+        53,
+        "S19"
+      ],
+      [
+        53,
+        118,
+        "LONG"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "LONG",
+        "completion": 118,
+        "turnaround": 118,
+        "waiting": 38,
+        "response": 0
+      },
+      {
+        "pid": "S1",
+        "completion": 5,
+        "turnaround": 3,
+        "waiting": 1,
+        "response": 1
+      },
+      {
+        "pid": "S2",
+        "completion": 11,
+        "turnaround": 7,
+        "waiting": 4,
+        "response": 4
+      },
+      {
+        "pid": "S3",
+        "completion": 12,
+        "turnaround": 6,
+        "waiting": 5,
+        "response": 5
+      },
+      {
+        "pid": "S4",
+        "completion": 14,
+        "turnaround": 6,
+        "waiting": 4,
+        "response": 4
+      },
+      {
+        "pid": "S5",
+        "completion": 20,
+        "turnaround": 10,
+        "waiting": 7,
+        "response": 7
+      },
+      {
+        "pid": "S6",
+        "completion": 21,
+        "turnaround": 9,
+        "waiting": 8,
+        "response": 8
+      },
+      {
+        "pid": "S7",
+        "completion": 23,
+        "turnaround": 9,
+        "waiting": 7,
+        "response": 7
+      },
+      {
+        "pid": "S8",
+        "completion": 26,
+        "turnaround": 10,
+        "waiting": 7,
+        "response": 7
+      },
+      {
+        "pid": "S9",
+        "completion": 30,
+        "turnaround": 12,
+        "waiting": 11,
+        "response": 11
+      },
+      {
+        "pid": "S10",
+        "completion": 32,
+        "turnaround": 12,
+        "waiting": 10,
+        "response": 10
+      },
+      {
+        "pid": "S11",
+        "completion": 35,
+        "turnaround": 13,
+        "waiting": 10,
+        "response": 10
+      },
+      {
+        "pid": "S12",
+        "completion": 36,
+        "turnaround": 12,
+        "waiting": 11,
+        "response": 11
+      },
+      {
+        "pid": "S13",
+        "completion": 38,
+        "turnaround": 12,
+        "waiting": 10,
+        "response": 10
+      },
+      {
+        "pid": "S14",
+        "completion": 41,
+        "turnaround": 13,
+        "waiting": 10,
+        "response": 10
+      },
+      {
+        "pid": "S15",
+        "completion": 45,
+        "turnaround": 15,
+        "waiting": 14,
+        "response": 14
+      },
+      {
+        "pid": "S16",
+        "completion": 47,
+        "turnaround": 15,
+        "waiting": 13,
+        "response": 13
+      },
+      {
+        "pid": "S17",
+        "completion": 50,
+        "turnaround": 16,
+        "waiting": 13,
+        "response": 13
+      },
+      {
+        "pid": "S18",
+        "completion": 51,
+        "turnaround": 15,
+        "waiting": 14,
+        "response": 14
+      },
+      {
+        "pid": "S19",
+        "completion": 53,
+        "turnaround": 15,
+        "waiting": 13,
+        "response": 13
+      }
+    ],
+    "mean_waiting": 10.5,
+    "mean_turnaround": 16.4,
+    "mean_response": 8.6,
+    "cpu_utilization": 100.0,
+    "switches": 24
+  },
+  "set3/priority": {
+    "intervals": [
+      [
+        0,
+        2,
+        "LONG"
+      ],
+      [
+        2,
+        4,
+        "S1"
+      ],
+      [
+        4,
+        7,
+        "S2"
+      ],
+      [
+        7,
+        8,
+        "S3"
+      ],
+      [
+        8,
+        10,
+        "S4"
+      ],
+      [
+        10,
+        13,
+        "S5"
+      ],
+      [
+        13,
+        14,
+        "S6"
+      ],
+      [
+        14,
+        16,
+        "S7"
+      ],
+      [
+        16,
+        19,
+        "S8"
+      ],
+      [
+        19,
+        20,
+        "S9"
+      ],
+      [
+        20,
+        22,
+        "S10"
+      ],
+      [
+        22,
+        25,
+        "S11"
+      ],
+      [
+        25,
+        26,
+        "S12"
+      ],
+      [
+        26,
+        28,
+        "S13"
+      ],
+      [
+        28,
+        31,
+        "S14"
+      ],
+      [
+        31,
+        32,
+        "S15"
+      ],
+      [
+        32,
+        34,
+        "S16"
+      ],
+      [
+        34,
+        37,
+        "S17"
+      ],
+      [
+        37,
+        38,
+        "S18"
+      ],
+      [
+        38,
+        40,
+        "S19"
+      ],
+      [
+        40,
+        118,
+        "LONG"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "LONG",
+        "completion": 118,
+        "turnaround": 118,
+        "waiting": 38,
+        "response": 0
+      },
+      {
+        "pid": "S1",
+        "completion": 4,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S2",
+        "completion": 7,
+        "turnaround": 3,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S3",
+        "completion": 8,
+        "turnaround": 2,
+        "waiting": 1,
+        "response": 1
+      },
+      {
+        "pid": "S4",
+        "completion": 10,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S5",
+        "completion": 13,
+        "turnaround": 3,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S6",
+        "completion": 14,
+        "turnaround": 2,
+        "waiting": 1,
+        "response": 1
+      },
+      {
+        "pid": "S7",
+        "completion": 16,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S8",
+        "completion": 19,
+        "turnaround": 3,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S9",
+        "completion": 20,
+        "turnaround": 2,
+        "waiting": 1,
+        "response": 1
+      },
+      {
+        "pid": "S10",
+        "completion": 22,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S11",
+        "completion": 25,
+        "turnaround": 3,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S12",
+        "completion": 26,
+        "turnaround": 2,
+        "waiting": 1,
+        "response": 1
+      },
+      {
+        "pid": "S13",
+        "completion": 28,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S14",
+        "completion": 31,
+        "turnaround": 3,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S15",
+        "completion": 32,
+        "turnaround": 2,
+        "waiting": 1,
+        "response": 1
+      },
+      {
+        "pid": "S16",
+        "completion": 34,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S17",
+        "completion": 37,
+        "turnaround": 3,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S18",
+        "completion": 38,
+        "turnaround": 2,
+        "waiting": 1,
+        "response": 1
+      },
+      {
+        "pid": "S19",
+        "completion": 40,
+        "turnaround": 2,
+        "waiting": 0,
+        "response": 0
+      }
+    ],
+    "mean_waiting": 2.2,
+    "mean_turnaround": 8.1,
+    "mean_response": 0.3,
+    "cpu_utilization": 100.0,
+    "switches": 20
+  },
+  "set3/mlfq": {
+    "intervals": [
+      [
+        0,
+        2,
+        "LONG"
+      ],
+      [
+        2,
+        3,
+        "S1"
+      ],
+      [
+        3,
+        4,
+        "LONG"
+      ],
+      [
+        4,
+        5,
+        "S2"
+      ],
+      [
+        5,
+        6,
+        "S1"
+      ],
+      [
+        6,
+        7,
+        "S3"
+      ],
+      [
+        7,
+        8,
+        "S2"
+      ],
+      [
+        8,
+        9,
+        "S4"
+      ],
+      [
+        9,
+        10,
+        "S2"
+      ],
+      [
+        10,
+        11,
+        "S5"
+      ],
+      [
+        11,
+        12,
+        "S4"
+      ],
+      [
+        12,
+        13,
+        "S6"
+      ],
+      [
+        13,
+        14,
+        "S5"
+      ],
+      [
+        14,
+        15,
+        "S7"
+      ],
+      [
+        15,
+        16,
+        "S5"
+      ],
+      [
+        16,
+        17,
+        "S8"
+      ],
+      [
+        17,
+        18,
+        "S7"
+      ],
+      [
+        18,
+        19,
+        "S9"
+      ],
+      [
+        19,
+        20,
+        "S8"
+      ],
+      [
+        20,
+        21,
+        "S10"
+      ],
+      [
+        21,
+        22,
+        "LONG"
+      ],
+      [
+        22,
+        23,
+        "S8"
+      ],
+      [
+        23,
+        24,
+        "S11"
+      ],
+      [
+        24,
+        25,
+        "S12"
+      ],
+      [
+        25,
+        26,
+        "S10"
+      ],
+      [
+        26,
+        27,
+        "S13"
+      ],
+      [
+        27,
+        28,
+        "LONG"
+      ],
+      [
+        28,
+        29,
+        "S14"
+      ],
+      [
+        29,
+        30,
+        "LONG"
+      ],
+      [
+        30,
+        31,
+        "S15"
+      ],
+      [
+        31,
+        32,
+        "S11"
+      ],
+      [
+        32,
+        33,
+        "S16"
+      ],
+      [
+        33,
+        34,
+        "S11"
+      ],
+      [
+        34,
+        35,
+        "S17"
+      ],
+      [
+        35,
+        36,
+        "S13"
+      ],
+      [
+        36,
+        37,
+        "S18"
+      ],
+      [
+        37,
+        38,
+        "S14"
+      ],
+      [
+        38,
+        39,
+        "S19"
+      ],
+      [
+        39,
+        40,
+        "S14"
+      ],
+      [
+        40,
+        41,
+        "S16"
+      ],
+      [
+        41,
+        42,
+        "S17"
+      ],
+      [
+        42,
+        43,
+        "S19"
+      ],
+      [
+        43,
+        44,
+        "LONG"
+      ],
+      [
+        44,
+        45,
+        "S17"
+      ],
+      [
+        45,
+        118,
+        "LONG"
+      ]
+    ],
+    "per_process": [
+      {
+        "pid": "LONG",
+        "completion": 118,
+        "turnaround": 118,
+        "waiting": 38,
+        "response": 0
+      },
+      {
+        "pid": "S1",
+        "completion": 6,
+        "turnaround": 4,
+        "waiting": 2,
+        "response": 0
+      },
+      {
+        "pid": "S2",
+        "completion": 10,
+        "turnaround": 6,
+        "waiting": 3,
+        "response": 0
+      },
+      {
+        "pid": "S3",
+        "completion": 7,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S4",
+        "completion": 12,
+        "turnaround": 4,
+        "waiting": 2,
+        "response": 0
+      },
+      {
+        "pid": "S5",
+        "completion": 16,
+        "turnaround": 6,
+        "waiting": 3,
+        "response": 0
+      },
+      {
+        "pid": "S6",
+        "completion": 13,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S7",
+        "completion": 18,
+        "turnaround": 4,
+        "waiting": 2,
+        "response": 0
+      },
+      {
+        "pid": "S8",
+        "completion": 23,
+        "turnaround": 7,
+        "waiting": 4,
+        "response": 0
+      },
+      {
+        "pid": "S9",
+        "completion": 19,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S10",
+        "completion": 26,
+        "turnaround": 6,
+        "waiting": 4,
+        "response": 0
+      },
+      {
+        "pid": "S11",
+        "completion": 34,
+        "turnaround": 12,
+        "waiting": 9,
+        "response": 1
+      },
+      {
+        "pid": "S12",
+        "completion": 25,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S13",
+        "completion": 36,
+        "turnaround": 10,
+        "waiting": 8,
+        "response": 0
+      },
+      {
+        "pid": "S14",
+        "completion": 40,
+        "turnaround": 12,
+        "waiting": 9,
+        "response": 0
+      },
+      {
+        "pid": "S15",
+        "completion": 31,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S16",
+        "completion": 41,
+        "turnaround": 9,
+        "waiting": 7,
+        "response": 0
+      },
+      {
+        "pid": "S17",
+        "completion": 45,
+        "turnaround": 11,
+        "waiting": 8,
+        "response": 0
+      },
+      {
+        "pid": "S18",
+        "completion": 37,
+        "turnaround": 1,
+        "waiting": 0,
+        "response": 0
+      },
+      {
+        "pid": "S19",
+        "completion": 43,
+        "turnaround": 5,
+        "waiting": 3,
+        "response": 0
+      }
+    ],
+    "mean_waiting": 5.1,
+    "mean_turnaround": 11.0,
+    "mean_response": 0.05,
+    "cpu_utilization": 100.0,
+    "switches": 44
+  }
+}
