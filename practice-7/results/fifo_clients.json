@@ -1,0 +1,29 @@
+[
+  {
+    "expression": "2+3",
+    "reply": {
+      "ok": true,
+      "result": 5
+    },
+    "roundtrip_including_client_start_seconds": 0.12240595000000098,
+    "request_bytes": 6
+  },
+  {
+    "expression": "8/2",
+    "reply": {
+      "ok": true,
+      "result": 4.0
+    },
+    "roundtrip_including_client_start_seconds": 0.14646867800000507,
+    "request_bytes": 6
+  },
+  {
+    "expression": "9-7",
+    "reply": {
+      "ok": true,
+      "result": 2
+    },
+    "roundtrip_including_client_start_seconds": 0.13685754300000497,
+    "request_bytes": 6
+  }
+]

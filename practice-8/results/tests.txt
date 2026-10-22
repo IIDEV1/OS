@@ -1,0 +1,12 @@
+test_grant_reference_request (test_deadlocks.DeadlockTests.test_grant_reference_request) ... ok
+test_invalid_and_unavailable (test_deadlocks.DeadlockTests.test_invalid_and_unavailable) ... ok
+test_reference_states_and_sequence (test_deadlocks.DeadlockTests.test_reference_states_and_sequence) ... ok
+test_tracked_and_ordered_terminate (test_deadlocks.DeadlockTests.test_tracked_and_ordered_terminate) ... ok
+test_tracked_recursive_acquire (test_deadlocks.DeadlockTests.test_tracked_recursive_acquire) ... ok
+test_unsafe_rollback (test_deadlocks.DeadlockTests.test_unsafe_rollback) ... ok
+test_wait_graph_cycle_and_release (test_deadlocks.DeadlockTests.test_wait_graph_cycle_and_release) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.564s
+
+OK

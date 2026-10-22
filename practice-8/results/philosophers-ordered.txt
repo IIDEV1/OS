@@ -1,0 +1,2 @@
+{"mode": "ordered", "observation_seconds": 2.0, "meals": [606, 635, 640, 648, 606], "max_completed_wait_seconds": [0.004751865999999438, 0.004807336000002493, 0.004490668999999059, 0.003821233999996565, 0.004994948000000221]}
+All threads joined; forks released

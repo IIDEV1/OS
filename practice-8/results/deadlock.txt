@@ -1,0 +1,18 @@
+Both threads take their first lock, then wait for the second
+Timeout (0:00:01)!
+Thread 0x00007c522f6fd6c0 [Thread-2 (worke] (most recent call first):
+  File "/mnt/c/Users/user/Documents/Codex/2026-10-12/new-chat/work/OS/practice-8/deadlock.py", line 13 in worker
+  File "/usr/lib/python3.14/threading.py", line 1024 in run
+  File "/usr/lib/python3.14/threading.py", line 1082 in _bootstrap_inner
+  File "/usr/lib/python3.14/threading.py", line 1044 in _bootstrap
+
+Thread 0x00007c522fefe6c0 [Thread-1 (worke] (most recent call first):
+  File "/mnt/c/Users/user/Documents/Codex/2026-10-12/new-chat/work/OS/practice-8/deadlock.py", line 13 in worker
+  File "/usr/lib/python3.14/threading.py", line 1024 in run
+  File "/usr/lib/python3.14/threading.py", line 1082 in _bootstrap_inner
+  File "/usr/lib/python3.14/threading.py", line 1044 in _bootstrap
+
+Thread 0x00007c5230c0b1c0 [python3] (most recent call first):
+  File "/usr/lib/python3.14/threading.py", line 1133 in join
+  File "/mnt/c/Users/user/Documents/Codex/2026-10-12/new-chat/work/OS/practice-8/deadlock.py", line 19 in main
+  File "/mnt/c/Users/user/Documents/Codex/2026-10-12/new-chat/work/OS/practice-8/deadlock.py", line 22 in <module>

@@ -1,0 +1,74 @@
+[
+  {
+    "expression": "0*0",
+    "reply": {
+      "ok": true,
+      "result": 0
+    },
+    "roundtrip_including_client_start_seconds": 0.2221139020000038,
+    "request_bytes": 6
+  },
+  {
+    "expression": "1*1",
+    "reply": {
+      "ok": true,
+      "result": 1
+    },
+    "roundtrip_including_client_start_seconds": 0.21278087900000742,
+    "request_bytes": 6
+  },
+  {
+    "expression": "2*2",
+    "reply": {
+      "ok": true,
+      "result": 4
+    },
+    "roundtrip_including_client_start_seconds": 0.2263279049999909,
+    "request_bytes": 6
+  },
+  {
+    "expression": "3*3",
+    "reply": {
+      "ok": true,
+      "result": 9
+    },
+    "roundtrip_including_client_start_seconds": 0.2068205799999987,
+    "request_bytes": 6
+  },
+  {
+    "expression": "4*4",
+    "reply": {
+      "ok": true,
+      "result": 16
+    },
+    "roundtrip_including_client_start_seconds": 0.2203803029999989,
+    "request_bytes": 6
+  },
+  {
+    "expression": "5*5",
+    "reply": {
+      "ok": true,
+      "result": 25
+    },
+    "roundtrip_including_client_start_seconds": 0.2236701320000094,
+    "request_bytes": 6
+  },
+  {
+    "expression": "6*6",
+    "reply": {
+      "ok": true,
+      "result": 36
+    },
+    "roundtrip_including_client_start_seconds": 0.22347382800001014,
+    "request_bytes": 6
+  },
+  {
+    "expression": "7*7",
+    "reply": {
+      "ok": true,
+      "result": 49
+    },
+    "roundtrip_including_client_start_seconds": 0.21326516100000958,
+    "request_bytes": 6
+  }
+]

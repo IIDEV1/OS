@@ -1,0 +1,1 @@
+After verification: /dev/shm empty; no /tmp/pr7-* endpoints remain.

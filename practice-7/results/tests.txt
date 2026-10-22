@@ -1,0 +1,13 @@
+test_calculator (test_ipc.IPCTests.test_calculator) ... ok
+test_fifo_open_blocks (test_ipc.IPCTests.test_fifo_open_blocks) ... ok
+test_fifo_sequential_and_cleanup (test_ipc.IPCTests.test_fifo_sequential_and_cleanup) ... ok
+test_pipe_and_pipeline (test_ipc.IPCTests.test_pipe_and_pipeline) ... ok
+test_signal_handler (test_ipc.IPCTests.test_signal_handler) ... ok
+test_sigterm_cleans_endpoints (test_ipc.IPCTests.test_sigterm_cleans_endpoints) ... ok
+test_terminal_ctrl_c (test_ipc.IPCTests.test_terminal_ctrl_c) ... ok
+test_unix_concurrent_and_cleanup (test_ipc.IPCTests.test_unix_concurrent_and_cleanup) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.500s
+
+OK

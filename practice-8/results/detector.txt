@@ -1,0 +1,4 @@
+1 {} NO CYCLE
+2 {} NO CYCLE
+3 {"T1": ["T2"]} NO CYCLE
+4 {"T1": ["T2"], "T2": ["T1"]} CYCLE: T1 -> T2 -> T1

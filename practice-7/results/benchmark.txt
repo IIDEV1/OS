@@ -1,0 +1,2 @@
+shm bytes= 80000000 median_seconds= 0.246296
+pipe bytes= 80000000 median_seconds= 0.222782

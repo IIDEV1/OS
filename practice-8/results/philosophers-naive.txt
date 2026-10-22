@@ -1,0 +1,1 @@
+{"mode": "naive", "observation_seconds": 2.0, "meals": [0, 0, 0, 0, 0], "max_completed_wait_seconds": [0.0, 0.0, 0.0, 0.0, 0.0]}
