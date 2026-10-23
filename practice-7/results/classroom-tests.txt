@@ -1,0 +1,9 @@
+test_signal_handler (test_ipc.IPCTests.test_signal_handler) ... ok
+test_terminal_ctrl_c (test_ipc.IPCTests.test_terminal_ctrl_c) ... ok
+test_pipe_and_pipeline (test_ipc.IPCTests.test_pipe_and_pipeline) ... ok
+test_fifo_open_blocks (test_ipc.IPCTests.test_fifo_open_blocks) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.244s
+
+OK

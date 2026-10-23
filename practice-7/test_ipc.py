@@ -25,8 +25,8 @@ def line_with_timeout(process, seconds=10):
 
 
 class IPCTests(unittest.TestCase):
-    def start(self,*args):
-        process=subprocess.Popen([sys.executable,*map(str,args)],cwd=ROOT,stdout=subprocess.PIPE,
+    def start(self,*args, prefix='READY'):
+        process=subprocess.Popen([sys.executable,'-u',*map(str,args)],cwd=ROOT,stdout=subprocess.PIPE,
                                  stderr=subprocess.PIPE,text=True)
         def cleanup():
             if process.poll() is None:
@@ -35,7 +35,7 @@ class IPCTests(unittest.TestCase):
                 except subprocess.TimeoutExpired: process.kill();process.wait()
             process.stdout.close();process.stderr.close()
         self.addCleanup(cleanup)
-        self.assertTrue(line_with_timeout(process).startswith('READY'))
+        self.assertTrue(line_with_timeout(process).startswith(prefix))
         return process
 
     def test_calculator(self):
@@ -99,24 +99,24 @@ class IPCTests(unittest.TestCase):
                 reader.stdout.close();path.unlink()
 
     def test_signal_handler(self):
-        process=self.start('signal_demo.py')
+        process=self.start('signal_demo.py', prefix='Мой PID:')
         os.kill(process.pid,signal.SIGINT)
         self.assertIn('SIGINT',line_with_timeout(process))
         self.assertIsNone(process.poll())
         process.terminate()
-        self.assertEqual(process.wait(timeout=5),0)
+        self.assertEqual(process.wait(timeout=5),-signal.SIGTERM)
 
     def test_terminal_ctrl_c(self):
         master,slave=os.openpty()
         def setup_terminal():
             os.setsid()
             fcntl.ioctl(0,termios.TIOCSCTTY,0)
-        process=subprocess.Popen([sys.executable,'signal_demo.py'],cwd=ROOT,stdin=slave,
+        process=subprocess.Popen([sys.executable,'-u','signal_demo.py'],cwd=ROOT,stdin=slave,
                                  stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,
                                  preexec_fn=setup_terminal)
         os.close(slave)
         try:
-            self.assertTrue(line_with_timeout(process).startswith('READY'))
+            self.assertTrue(line_with_timeout(process).startswith('Мой PID:'))
             os.write(master,b'\x03')  # Terminal driver generates SIGINT from Ctrl+C.
             self.assertIn('SIGINT',line_with_timeout(process))
             self.assertIsNone(process.poll())
@@ -125,7 +125,7 @@ class IPCTests(unittest.TestCase):
             process.stdout.close();process.stderr.close();os.close(master)
 
     def test_pipe_and_pipeline(self):
-        for file in ('pipe_demo.py','pipeline_demo.py'):
+        for file in ('pipe_demo.py','pipeline.py'):
             result=subprocess.run([sys.executable,file],cwd=ROOT,capture_output=True,timeout=10,text=True)
             self.assertEqual(result.returncode,0,result.stderr)
             self.assertTrue(result.stdout)

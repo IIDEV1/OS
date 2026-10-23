@@ -1,17 +1,15 @@
-#!/usr/bin/env python3
 import os
 import signal
+import time
 
 
-def main():
-    def handle(signum, frame):
-        print('SIGINT получен: процесс продолжает работу', flush=True)
-    signal.signal(signal.SIGINT, handle)
-    signal.signal(signal.SIGTERM, lambda *_: exit(0))
-    print(f'READY PID={os.getpid()}; Ctrl+C / kill -INT; завершение: kill -TERM', flush=True)
-    while True:
-        signal.pause()
+def handler(signum, frame):
+    name = signal.Signals(signum).name
+    print(f"Получен {name}, но я не завершаюсь")
 
 
-if __name__ == '__main__':
-    main()
+signal.signal(signal.SIGINT, handler)
+print("Мой PID:", os.getpid())
+
+while True:
+    time.sleep(1)
