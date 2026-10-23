@@ -2,13 +2,16 @@ from copy import deepcopy
 import subprocess
 import sys
 import unittest
-from banker import load
+from banker import load, is_safe, AVAILABLE, ALLOCATION, MAX
 from detector import WaitGraph, find_cycle
 from tracked_lock import Registry, TrackedLock, DeadlockError
 
 
 class DeadlockTests(unittest.TestCase):
     def test_reference_states_and_sequence(self):
+        safe, order = is_safe(AVAILABLE, ALLOCATION, MAX)
+        self.assertTrue(safe)
+        self.assertEqual(order, ['P1', 'P3', 'P4', 'P0', 'P2'])
         bank=load('bank1.txt')
         self.assertTrue(bank.safety()[0])
         self.assertTrue(bank.valid_sequence([1,3,4,2,0]))

@@ -7,6 +7,6 @@ test_unsafe_rollback (test_deadlocks.DeadlockTests.test_unsafe_rollback) ... ok
 test_wait_graph_cycle_and_release (test_deadlocks.DeadlockTests.test_wait_graph_cycle_and_release) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.564s
+Ran 7 tests in 0.261s
 
 OK

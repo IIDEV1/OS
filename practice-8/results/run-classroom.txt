@@ -1,0 +1,31 @@
+test_grant_reference_request (test_deadlocks.DeadlockTests.test_grant_reference_request) ... ok
+test_invalid_and_unavailable (test_deadlocks.DeadlockTests.test_invalid_and_unavailable) ... ok
+test_reference_states_and_sequence (test_deadlocks.DeadlockTests.test_reference_states_and_sequence) ... ok
+test_tracked_and_ordered_terminate (test_deadlocks.DeadlockTests.test_tracked_and_ordered_terminate) ... ok
+test_tracked_recursive_acquire (test_deadlocks.DeadlockTests.test_tracked_recursive_acquire) ... ok
+test_unsafe_rollback (test_deadlocks.DeadlockTests.test_unsafe_rollback) ... ok
+test_wait_graph_cycle_and_release (test_deadlocks.DeadlockTests.test_wait_graph_cycle_and_release) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.261s
+
+OK
+Need: [[7, 4, 3], [1, 2, 2], [6, 0, 0], [0, 1, 1], [4, 3, 1]]
+SAFE P1 P3 P4 P0 P2
+Need: [[7, 4, 3], [1, 2, 2], [6, 0, 0], [0, 1, 1], [4, 3, 1]]
+UNSAFE
+Need: [[7, 4, 3], [1, 2, 2], [6, 0, 0], [0, 1, 1], [4, 3, 1]]
+SAFE P1 P3 P4 P0 P2
+GRANTED Safe sequence: P1 P3 P4 P0 P2 Available= [2, 3, 0]
+1 {} NO CYCLE
+2 {} NO CYCLE
+3 {"T1": ["T2"]} NO CYCLE
+4 {"T1": ["T2"], "T2": ["T1"]} CYCLE: T1 -> T2 -> T1
+Ordered locks: [1000, 1000]
+Cycle prevented: Wait-for cycle: 125466704656064 -> 125466713048768 -> 125466704656064
+Completed: [1] Graph empty: True
+{"mode": "ordered", "observation_seconds": 2.0, "meals": [667, 683, 686, 688, 667], "max_completed_wait_seconds": [0.003007388000000333, 0.0027392070000047397, 0.0024559470000014016, 0.0025500170000043454, 0.0028397920000031718]}
+All threads joined; forks released
+{"mode": "waiter", "observation_seconds": 2.0, "meals": [652, 652, 651, 652, 652], "max_completed_wait_seconds": [0.002036449000001994, 0.002202877999991415, 0.0022914409999970076, 0.0022180950000034727, 0.002031068000007963]}
+All threads joined; forks released
+Expected hangs terminated; corrected programs finished.

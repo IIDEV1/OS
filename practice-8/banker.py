@@ -4,6 +4,31 @@ import argparse
 from copy import deepcopy
 import json
 
+# Точный учебный пример со слайда (Веха 8.3, часть 1).
+AVAILABLE = [3, 3, 2]
+ALLOCATION = [[0, 1, 0], [2, 0, 0], [3, 0, 2], [2, 1, 1], [0, 0, 2]]
+MAX = [[7, 5, 3], [3, 2, 2], [9, 0, 2], [2, 2, 2], [4, 3, 3]]
+
+
+def is_safe(available, allocation, maximum):
+    """Return (safe, order), following the classroom slide line by line."""
+    n, m = len(allocation), len(available)
+    need = [[maximum[i][j] - allocation[i][j] for j in range(m)] for i in range(n)]
+    work = available[:]
+    finish = [False] * n
+    order = []
+    progress = True
+    while progress:
+        progress = False
+        for i in range(n):
+            if not finish[i] and all(need[i][j] <= work[j] for j in range(m)):
+                for j in range(m):
+                    work[j] += allocation[i][j]
+                finish[i] = True
+                order.append(f"P{i}")
+                progress = True
+    return all(finish), order
+
 
 class Banker:
     def __init__(self, available, allocation, maximum):
