@@ -20,7 +20,7 @@ python3 signal_demo.py
 
 Ubuntu/WSL2, Python 3.10+ со стандартной библиотекой, Bash и coreutils. pip-пакеты не нужны. При отсутствии пакетов: `sudo apt-get update && sudo apt-get install -y python3 bash coreutils grep`.
 
-Из папки `practice-7`:
+Из папки `practical-07`:
 
 ```bash
 bash run.sh
@@ -142,3 +142,4 @@ wait
 **Что произойдёт при записи в pipe без читателей?** В POSIX возникает SIGPIPE; если сигнал игнорируется, write возвращает EPIPE. Python обычно игнорирует SIGPIPE и сообщает BrokenPipeError.
 
 FIFO удобен для простого последовательного сервиса; Unix-сокет — для нескольких независимых клиентов; общая память — для больших общих буферов при явной синхронизации. Проверка жизненного цикла ресурсов важна наравне с корректностью ответа.
+
