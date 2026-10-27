@@ -1,25 +1,27 @@
-# Практическая работа №2. Bash и системные вызовы
+# Practical Work 2 — Bash and System Calls
 
-## Цель
+## Goal
 
-Научиться обрабатывать журналы из Bash и увидеть, как пользовательская команда взаимодействует с системными вызовами чтения, записи и открытия файлов.
+Process log files with Bash and connect shell commands with the system calls performed by the operating system.
 
-## Что сделано
+## Implemented tasks
 
-1. Подготовлены тестовые файлы журналов в `data/`.
-2. Скрипт `report.sh` принимает каталог, уровень `ERROR` или `WARN` и необязательный параметр `--top N`.
-3. Из строк журнала извлекаются модули и подсчитывается количество сообщений.
-4. Результаты сортируются по убыванию.
-5. Проверяются ошибки аргументов, отсутствующий каталог и неверное значение N.
-6. `hello.py` читает файл и выводит его размер.
-7. Через `strace` сохранены трассировки чтения и открытия файлов.
+- generate a collection of test log files;
+- implement `report.sh` with `ERROR`, `WARN` and `--top N` arguments;
+- count messages by module and sort the result;
+- validate missing arguments, invalid levels and invalid directories;
+- implement `hello.py` to report a file size;
+- record file access with `strace`.
 
-## Как читать график
+## Result
 
-`log_levels.png` сравнивает количество сообщений разных уровней или модулей. Высокий столбец означает, что соответствующий компонент чаще записывал события и требует внимания при диагностике.
+`log_levels.png` compares the number of messages produced by modules or log levels. The trace files show calls such as `open`, `read`, `write` and `close` made by the programs.
 
-Файлы `trace.txt` и `file_trace.txt` показывают системные обращения процесса: открытие файла, чтение данных и вывод результата. Это связывает команду Bash с реальной работой ядра.
+## Run
 
-## Вывод
+```bash
+./report.sh data ERROR --top 3
+python3 hello.py data/01.log
+```
 
-Работа демонстрирует практическую пользу конвейеров Bash и отличие пользовательского скрипта от системных вызовов, которые выполняются внутри ОС. Сохранённые логи позволяют проверить результат без повторной генерации всех журналов.
+The scripts require Linux/Bash because the task uses shell pipelines and system-call tracing.

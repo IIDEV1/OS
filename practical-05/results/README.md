@@ -1,5 +1,3 @@
-# Результаты: Практическая работа № 5. Симулятор планирования CPU
+# Results — Practical 5
 
-Результат варианта B показан графиком ниже.
-
-![График](scheduling_metrics.png)
+`scheduling_metrics.png` compares waiting time, turnaround time, response time and context switches for the implemented CPU schedulers. CSV, JSON, SVG and Markdown files contain the exact schedules, metrics and generated test cases.

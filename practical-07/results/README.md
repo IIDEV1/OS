@@ -1,5 +1,3 @@
-# Результаты: Практическая работа № 7. Межпроцессное взаимодействие
+# Results — Practical 7
 
-Результат варианта B показан графиком ниже.
-
-![График](ipc_comparison.png)
+`ipc_comparison.png` compares the measured inter-process communication methods. The remaining files contain pipe, FIFO, signal, pipeline, socket, shared-memory and benchmark outputs.

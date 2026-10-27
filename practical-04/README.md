@@ -1,19 +1,21 @@
-# Практическая работа №4. Потоки и процессы
+# Practical Work 4 — Threads and Processes
 
-## Цель
+## Goal
 
-Сравнить последовательное выполнение, потоки и отдельные процессы на одной вычислительной задаче и понять влияние модели параллелизма на время работы.
+Compare sequential execution, multiple threads and multiple processes on the same CPU-bound calculation.
 
-## Методика
+## Method
 
-Сумма 100 000 чисел рассчитывается в трёх режимах: одним потоком, четырьмя потоками и четырьмя процессами. Каждый режим запускается несколько раз, после чего используется медианное время, чтобы единичный скачок нагрузки не определял вывод.
+The program calculates the sum of 100,000 numbers in three modes: sequentially, with four threads and with four processes. Every mode is measured several times and the median duration is reported.
 
-## Что показывает график
+## Result
 
-`parallel_speed.png` сравнивает длительность режимов. Потоки используют общую память и дешевле создаются, но CPU-bound код Python ограничен GIL. Процессы имеют отдельную память и больший overhead, зато могут выполнять вычисления на нескольких ядрах.
+`parallel_speed.png` compares the execution time. Threads share memory and are cheap to create, but Python CPU-bound code is limited by the GIL. Processes have separate memory and higher startup overhead, but can use different CPU cores.
 
-Результат зависит от числа ядер, версии Python, фоновой нагрузки и размера задачи. Для маленькой суммы расходы на создание рабочих объектов могут быть больше выигрыша от параллелизма.
+The result depends on the number of cores, Python version, system load and task size. For a small task, parallel startup overhead may exceed the speedup.
 
-## Вывод
+## Run
 
-Потоки удобны для совместного состояния и операций ожидания, а процессы подходят для тяжёлых независимых вычислений. Сравнение измеряется экспериментально, потому что универсально лучшего режима для любой задачи нет.
+```bash
+python3 solution.py
+```

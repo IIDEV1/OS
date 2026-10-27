@@ -1,21 +1,28 @@
-# Практическая работа №3. Процессы в Linux
+# Practical Work 3 — Linux Processes
 
-## Цель
+## Goal
 
-Изучить жизненный цикл процесса и основные механизмы Linux: `/proc`, `fork`, `exec`, ожидание завершения, zombie, orphan и Copy-on-Write.
+Study process creation, the process tree and the main process states provided by Linux.
 
-## Выполненные эксперименты
+## Implemented tasks
 
-1. `ptree.py` читает `/proc/<PID>/status` и строит дерево процессов текущего пользователя без команды `ps`.
-2. `runner.py` демонстрирует запуск дочерней программы и получение кода завершения.
-3. `zombie.py` создаёт завершившийся дочерний процесс, который временно остаётся в таблице процессов до `wait`.
-4. `orphan.py` показывает передачу осиротевшего процесса системному процессу-init.
-5. `cow.py` демонстрирует Copy-on-Write: страницы памяти копируются только после изменения.
+- read process information directly from `/proc`;
+- build a process tree in `ptree.py`;
+- create child processes with `fork()`;
+- replace a process image with `exec()`;
+- demonstrate `wait`, zombie and orphan processes;
+- demonstrate Copy-on-Write memory behavior.
 
-## Результат
+## Result
 
-`process_states.png` визуально сопоставляет состояния процессов. В текстовых файлах результатов сохранены PID, PPID, статусы и сообщения дочерних процессов. Zombie отличается наличием записи о завершённом процессе, а orphan получает нового родителя после завершения исходного родителя.
+`process_states.png` compares the observed process states. A zombie has already finished but remains in the process table until its parent calls `wait`. An orphan continues after its original parent exits and is adopted by init/systemd. Copy-on-Write delays memory copying until a process changes a shared page.
 
-## Вывод
+## Run
 
-Процессы имеют собственное адресное пространство и жизненный цикл, но создаются эффективно благодаря Copy-on-Write. Практика показывает, почему родитель должен вызывать `wait` и как ядро поддерживает информацию о процессах в `/proc`.
+```bash
+python3 ptree.py
+python3 runner.py
+python3 zombie.py
+python3 orphan.py
+python3 cow.py
+```

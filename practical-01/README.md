@@ -1,23 +1,26 @@
-# Практическая работа №1. Пользователи, права доступа и диагностика Linux
+# Practical Work 1 — Linux Users, Groups and Permissions
 
-## Цель
+## Goal
 
-Познакомиться с базовой диагностикой Linux и понять, как операционная система определяет пользователя, группу и разрешения на файлы. Вариант B дополнительно показывает создание пользователей и общей директории для группы.
+Learn how Linux identifies users and groups and how access permissions are applied to files and directories.
 
-## Выполненные действия
+## Implemented tasks
 
-1. Зафиксированы имя системы, версия ядра, архитектура, текущий пользователь и рабочая директория.
-2. Проверены группы текущего пользователя и доступные оболочки.
-3. Созданы команды для добавления `student2`, группы `developers` и общей директории `/srv/shared`.
-4. Настроены владелец, группа, обычные права и setgid для общей папки.
-5. Проверена запись участника группы и отсутствие доступа у постороннего пользователя.
+- record the operating system, kernel, architecture, current user and working directory;
+- inspect the current groups and available shells;
+- prepare commands for creating `student2` and the `developers` group;
+- configure the shared directory `/srv/shared`;
+- set ownership, group ownership and access permissions;
+- verify access for a group member and deny access to unrelated users.
 
-## Интерпретация результата
+## Result
 
-График `environment.png` показывает параметры среды, в которой выполнялась работа. Это важно для воспроизводимости: поведение `/proc`, прав и системных вызовов зависит от Linux-ядра и пользователя.
+`environment.png` contains the recorded environment information. The work demonstrates the `rwx` permission model for the owner, group and other users. The setgid bit makes new files inherit the directory group, which is useful for a shared team folder.
 
-Права `rwx` разделены на владельца, группу и остальных пользователей. Setgid на общей директории заставляет новые файлы наследовать группу каталога, поэтому участники `developers` могут работать с общими файлами согласованно.
+## Run
 
-## Вывод
+```bash
+python3 solution.py
+```
 
-Практика показывает связь между учётной записью, группой и доступом к ресурсам. Скрипт `solution.py` даёт диагностический результат, а `setup_commands.sh` содержит команды для расширенного варианта B. Полный запуск выполняется в Linux/Ubuntu или WSL2.
+Run `setup_commands.sh` in Ubuntu/WSL2 for the extended Variant B setup.

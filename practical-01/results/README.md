@@ -1,5 +1,3 @@
-# Результаты: Практическая работа №1: Диагностика, Linux и терминал
+# Results — Practical 1
 
-Результат варианта B показан графиком ниже.
-
-![График](environment.png)
+`environment.png` summarizes the Linux environment used for the experiment: system information, kernel, architecture, current user and working directory. The text confirms that the permission and group setup was executed in a Linux-compatible environment.
